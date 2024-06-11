@@ -29,11 +29,13 @@ def predict_with_uncertainty(predictor: nnUNetPredictor,
     
     patient_files = [os.path.join(input_folder, f) for f in os.listdir(input_folder) if f.endswith('.nii.gz')]
 
+    # BAD APPROACH: Need to take into account preprocessing images (CT + PT concat + normalization per patient, etc)
+    # REMEMBER: Model expects two channel input (CT + PT concat)
+    # Looking on how to take advantage of nnUNetPredictor for this
     for patient_file in patient_files:
         for i, model_dir in enumerate(model_dirs):
             predictor.network.train()  # Enable dropout
             with torch.no_grad():
-                # BAD APPROACH: Need to take into account preprocessing images (CT + PT concat + normalization per patient, etc)
                 pred = predictor.predict_from_files(
                     list_of_lists_or_source_folder=[[patient_file]],
                     output_folder_or_list_of_truncated_output_files=None,
@@ -46,7 +48,7 @@ def predict_with_uncertainty(predictor: nnUNetPredictor,
                     part_id=0
                 )[0]  # Assuming predict_from_files returns a list and we need the first item
                 
-                # Save logits as npz
+                # Save logits as npz -> this is to do soft voting and hish uncertainty voting schemes as in Smriti approah
                 np.savez_compressed(os.path.join(model_dir, os.path.basename(patient_file).replace('.nii.gz', '_logits.npz')), pred)
                 
                 # Save prediction as NIfTI
