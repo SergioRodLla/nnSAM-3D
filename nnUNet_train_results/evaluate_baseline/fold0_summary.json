@@ -1,0 +1,1414 @@
+{
+    "foreground_mean": {
+        "Dice": 0.6474699342004612,
+        "FN": 3479.7924528301887,
+        "FP": 3760.1886792452833,
+        "IoU": 0.5321468756220001,
+        "TN": 5432412.867924528,
+        "TP": 12123.150943396227,
+        "n_pred": 15883.33962264151,
+        "n_ref": 15602.943396226416
+    },
+    "mean": {
+        "1": {
+            "Dice": 0.7370927318651883,
+            "FN": 3006.264150943396,
+            "FP": 1873.3207547169811,
+            "IoU": 0.6212935442626903,
+            "TN": 5435414.867924528,
+            "TP": 11481.547169811322,
+            "n_pred": 13354.867924528302,
+            "n_ref": 14487.811320754718
+        },
+        "2": {
+            "Dice": 0.557847136535734,
+            "FN": 3953.3207547169814,
+            "FP": 5647.056603773585,
+            "IoU": 0.44300020698131,
+            "TN": 5429410.867924528,
+            "TP": 12764.754716981131,
+            "n_pred": 18411.811320754718,
+            "n_ref": 16718.075471698114
+        }
+    },
+    "metric_per_case": [
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8318007022237084,
+                    "FN": 1891,
+                    "FP": 121,
+                    "IoU": 0.7120366394733075,
+                    "TN": 5444789,
+                    "TP": 4975,
+                    "n_pred": 5096,
+                    "n_ref": 6866
+                },
+                "2": {
+                    "Dice": 0.7370647219690064,
+                    "FN": 3844,
+                    "FP": 3367,
+                    "IoU": 0.5836124263771798,
+                    "TN": 5434458,
+                    "TP": 10107,
+                    "n_pred": 13474,
+                    "n_ref": 13951
+                }
+            },
+            "prediction_file": "test_preds_fold0/CHUM_008.nii.gz",
+            "reference_file": "data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/CHUM_008.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.4122961885969467,
+                    "FN": 5560,
+                    "FP": 99,
+                    "IoU": 0.2596807953950811,
+                    "TN": 5444132,
+                    "TP": 1985,
+                    "n_pred": 2084,
+                    "n_ref": 7545
+                },
+                "2": {
+                    "Dice": 0.9033974310253097,
+                    "FN": 1276,
+                    "FP": 5079,
+                    "IoU": 0.8238148045467147,
+                    "TN": 5415706,
+                    "TP": 29715,
+                    "n_pred": 34794,
+                    "n_ref": 30991
+                }
+            },
+            "prediction_file": "test_preds_fold0/CHUM_036.nii.gz",
+            "reference_file": "data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/CHUM_036.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.7893475058490511,
+                    "FN": 43,
+                    "FP": 7250,
+                    "IoU": 0.6520017178031207,
+                    "TN": 5430819,
+                    "TP": 13664,
+                    "n_pred": 20914,
+                    "n_ref": 13707
+                },
+                "2": {
+                    "Dice": 0.7799343087488803,
+                    "FN": 1531,
+                    "FP": 1417,
+                    "IoU": 0.6392559960841899,
+                    "TN": 5443604,
+                    "TP": 5224,
+                    "n_pred": 6641,
+                    "n_ref": 6755
+                }
+            },
+            "prediction_file": "test_preds_fold0/CHUM_051.nii.gz",
+            "reference_file": "data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/CHUM_051.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.284862043251305,
+                    "FN": 430,
+                    "FP": 3406,
+                    "IoU": 0.16608695652173913,
+                    "TN": 5447176,
+                    "TP": 764,
+                    "n_pred": 4170,
+                    "n_ref": 1194
+                },
+                "2": {
+                    "Dice": 0.0,
+                    "FN": 3365,
+                    "FP": 0,
+                    "IoU": 0.0,
+                    "TN": 5448411,
+                    "TP": 0,
+                    "n_pred": 0,
+                    "n_ref": 3365
+                }
+            },
+            "prediction_file": "test_preds_fold0/CHUM_054.nii.gz",
+            "reference_file": "data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/CHUM_054.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8768092634287552,
+                    "FN": 1085,
+                    "FP": 64,
+                    "IoU": 0.7806414662084765,
+                    "TN": 5446538,
+                    "TP": 4089,
+                    "n_pred": 4153,
+                    "n_ref": 5174
+                },
+                "2": {
+                    "Dice": 0.6362081110999296,
+                    "FN": 152,
+                    "FP": 7078,
+                    "IoU": 0.4664994096812279,
+                    "TN": 5438224,
+                    "TP": 6322,
+                    "n_pred": 13400,
+                    "n_ref": 6474
+                }
+            },
+            "prediction_file": "test_preds_fold0/CHUP_008.nii.gz",
+            "reference_file": "data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/CHUP_008.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8563559460965934,
+                    "FN": 4248,
+                    "FP": 133,
+                    "IoU": 0.748795871559633,
+                    "TN": 5434336,
+                    "TP": 13059,
+                    "n_pred": 13192,
+                    "n_ref": 17307
+                },
+                "2": {
+                    "Dice": 0.6994037545239149,
+                    "FN": 3945,
+                    "FP": 7600,
+                    "IoU": 0.5377562459961563,
+                    "TN": 5426800,
+                    "TP": 13431,
+                    "n_pred": 21031,
+                    "n_ref": 17376
+                }
+            },
+            "prediction_file": "test_preds_fold0/CHUP_009.nii.gz",
+            "reference_file": "data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/CHUP_009.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.7833608555476921,
+                    "FN": 1874,
+                    "FP": 881,
+                    "IoU": 0.6438728024819028,
+                    "TN": 5444040,
+                    "TP": 4981,
+                    "n_pred": 5862,
+                    "n_ref": 6855
+                },
+                "2": {
+                    "Dice": 0.19955379276152702,
+                    "FN": 124,
+                    "FP": 6334,
+                    "IoU": 0.11083574280600303,
+                    "TN": 5444513,
+                    "TP": 805,
+                    "n_pred": 7139,
+                    "n_ref": 929
+                }
+            },
+            "prediction_file": "test_preds_fold0/CHUP_010.nii.gz",
+            "reference_file": "data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/CHUP_010.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.0,
+                    "FN": 0,
+                    "FP": 394,
+                    "IoU": 0.0,
+                    "TN": 5451382,
+                    "TP": 0,
+                    "n_pred": 394,
+                    "n_ref": 0
+                },
+                "2": {
+                    "Dice": 0.5830576845502219,
+                    "FN": 0,
+                    "FP": 20672,
+                    "IoU": 0.4114900643398053,
+                    "TN": 5416650,
+                    "TP": 14454,
+                    "n_pred": 35126,
+                    "n_ref": 14454
+                }
+            },
+            "prediction_file": "test_preds_fold0/CHUP_032.nii.gz",
+            "reference_file": "data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/CHUP_032.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.37926391382405744,
+                    "FN": 760,
+                    "FP": 7538,
+                    "IoU": 0.23400720022154528,
+                    "TN": 5440943,
+                    "TP": 2535,
+                    "n_pred": 10073,
+                    "n_ref": 3295
+                },
+                "2": {
+                    "Dice": 0.0,
+                    "FN": 1156,
+                    "FP": 795,
+                    "IoU": 0.0,
+                    "TN": 5449825,
+                    "TP": 0,
+                    "n_pred": 795,
+                    "n_ref": 1156
+                }
+            },
+            "prediction_file": "test_preds_fold0/CHUP_054.nii.gz",
+            "reference_file": "data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/CHUP_054.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9156968005153532,
+                    "FN": 1481,
+                    "FP": 482,
+                    "IoU": 0.8445025348542459,
+                    "TN": 5439152,
+                    "TP": 10661,
+                    "n_pred": 11143,
+                    "n_ref": 12142
+                },
+                "2": {
+                    "Dice": 0.2011267240821084,
+                    "FN": 5,
+                    "FP": 24669,
+                    "IoU": 0.11180705543556516,
+                    "TN": 5423996,
+                    "TP": 3106,
+                    "n_pred": 27775,
+                    "n_ref": 3111
+                }
+            },
+            "prediction_file": "test_preds_fold0/CHUP_058.nii.gz",
+            "reference_file": "data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/CHUP_058.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.7784853115978944,
+                    "FN": 43,
+                    "FP": 5175,
+                    "IoU": 0.6373114617362897,
+                    "TN": 5437389,
+                    "TP": 9169,
+                    "n_pred": 14344,
+                    "n_ref": 9212
+                },
+                "2": {
+                    "Dice": 0.46,
+                    "FN": 9,
+                    "FP": 4743,
+                    "IoU": 0.2987012987012987,
+                    "TN": 5445000,
+                    "TP": 2024,
+                    "n_pred": 6767,
+                    "n_ref": 2033
+                }
+            },
+            "prediction_file": "test_preds_fold0/CHUP_067.nii.gz",
+            "reference_file": "data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/CHUP_067.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.822919611723683,
+                    "FN": 1821,
+                    "FP": 58,
+                    "IoU": 0.6991192954363491,
+                    "TN": 5445531,
+                    "TP": 4366,
+                    "n_pred": 4424,
+                    "n_ref": 6187
+                },
+                "2": {
+                    "Dice": 0.8949540641212439,
+                    "FN": 6655,
+                    "FP": 10576,
+                    "IoU": 0.8098795127548769,
+                    "TN": 5361144,
+                    "TP": 73401,
+                    "n_pred": 83977,
+                    "n_ref": 80056
+                }
+            },
+            "prediction_file": "test_preds_fold0/CHUP_070.nii.gz",
+            "reference_file": "data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/CHUP_070.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.7565769579679468,
+                    "FN": 66,
+                    "FP": 1544,
+                    "IoU": 0.6084630350194552,
+                    "TN": 5447664,
+                    "TP": 2502,
+                    "n_pred": 4046,
+                    "n_ref": 2568
+                },
+                "2": {
+                    "Dice": 0.18356910902915158,
+                    "FN": 66,
+                    "FP": 21807,
+                    "IoU": 0.1010603320729903,
+                    "TN": 5427444,
+                    "TP": 2459,
+                    "n_pred": 24266,
+                    "n_ref": 2525
+                }
+            },
+            "prediction_file": "test_preds_fold0/CHUP_073.nii.gz",
+            "reference_file": "data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/CHUP_073.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.7072243346007605,
+                    "FN": 3251,
+                    "FP": 60,
+                    "IoU": 0.5470588235294118,
+                    "TN": 5444466,
+                    "TP": 3999,
+                    "n_pred": 4059,
+                    "n_ref": 7250
+                },
+                "2": {
+                    "Dice": 0.0,
+                    "FN": 2974,
+                    "FP": 678,
+                    "IoU": 0.0,
+                    "TN": 5448124,
+                    "TP": 0,
+                    "n_pred": 678,
+                    "n_ref": 2974
+                }
+            },
+            "prediction_file": "test_preds_fold0/CHUP_074.nii.gz",
+            "reference_file": "data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/CHUP_074.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8494480073724399,
+                    "FN": 7189,
+                    "FP": 816,
+                    "IoU": 0.7382960638158755,
+                    "TN": 5421188,
+                    "TP": 22583,
+                    "n_pred": 23399,
+                    "n_ref": 29772
+                },
+                "2": {
+                    "Dice": 0.0,
+                    "FN": 0,
+                    "FP": 1063,
+                    "IoU": 0.0,
+                    "TN": 5450713,
+                    "TP": 0,
+                    "n_pred": 1063,
+                    "n_ref": 0
+                }
+            },
+            "prediction_file": "test_preds_fold0/CHUS_022.nii.gz",
+            "reference_file": "data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/CHUS_022.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9429328133029397,
+                    "FN": 3797,
+                    "FP": 534,
+                    "IoU": 0.8920273234942162,
+                    "TN": 5411664,
+                    "TP": 35781,
+                    "n_pred": 36315,
+                    "n_ref": 39578
+                },
+                "2": {
+                    "Dice": 0.5658288194385114,
+                    "FN": 23433,
+                    "FP": 1976,
+                    "IoU": 0.3945336701139017,
+                    "TN": 5409810,
+                    "TP": 16557,
+                    "n_pred": 18533,
+                    "n_ref": 39990
+                }
+            },
+            "prediction_file": "test_preds_fold0/CHUS_027.nii.gz",
+            "reference_file": "data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/CHUS_027.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9363910416121795,
+                    "FN": 3940,
+                    "FP": 681,
+                    "IoU": 0.8803903297613501,
+                    "TN": 5413142,
+                    "TP": 34013,
+                    "n_pred": 34694,
+                    "n_ref": 37953
+                },
+                "2": {
+                    "Dice": 0.7272366068472287,
+                    "FN": 3290,
+                    "FP": 829,
+                    "IoU": 0.5713839750260146,
+                    "TN": 5442166,
+                    "TP": 5491,
+                    "n_pred": 6320,
+                    "n_ref": 8781
+                }
+            },
+            "prediction_file": "test_preds_fold0/CHUS_038.nii.gz",
+            "reference_file": "data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/CHUS_038.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8965928142882875,
+                    "FN": 7078,
+                    "FP": 385,
+                    "IoU": 0.8125674962955521,
+                    "TN": 5411959,
+                    "TP": 32354,
+                    "n_pred": 32739,
+                    "n_ref": 39432
+                },
+                "2": {
+                    "Dice": 0.8242790502359804,
+                    "FN": 11316,
+                    "FP": 7933,
+                    "IoU": 0.7010839182557923,
+                    "TN": 5387380,
+                    "TP": 45147,
+                    "n_pred": 53080,
+                    "n_ref": 56463
+                }
+            },
+            "prediction_file": "test_preds_fold0/CHUS_043.nii.gz",
+            "reference_file": "data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/CHUS_043.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8660305506824697,
+                    "FN": 2894,
+                    "FP": 237,
+                    "IoU": 0.7637159459663422,
+                    "TN": 5438525,
+                    "TP": 10120,
+                    "n_pred": 10357,
+                    "n_ref": 13014
+                },
+                "2": {
+                    "Dice": 0.7607339449541285,
+                    "FN": 643,
+                    "FP": 661,
+                    "IoU": 0.6138584542493337,
+                    "TN": 5448399,
+                    "TP": 2073,
+                    "n_pred": 2734,
+                    "n_ref": 2716
+                }
+            },
+            "prediction_file": "test_preds_fold0/CHUS_068.nii.gz",
+            "reference_file": "data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/CHUS_068.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8388367512455104,
+                    "FN": 1114,
+                    "FP": 277,
+                    "IoU": 0.7224106964677709,
+                    "TN": 5446765,
+                    "TP": 3620,
+                    "n_pred": 3897,
+                    "n_ref": 4734
+                },
+                "2": {
+                    "Dice": 0.7772239984953921,
+                    "FN": 4224,
+                    "FP": 514,
+                    "IoU": 0.6356225486426209,
+                    "TN": 5438773,
+                    "TP": 8265,
+                    "n_pred": 8779,
+                    "n_ref": 12489
+                }
+            },
+            "prediction_file": "test_preds_fold0/CHUS_090.nii.gz",
+            "reference_file": "data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/CHUS_090.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.889820882481433,
+                    "FN": 879,
+                    "FP": 382,
+                    "IoU": 0.8015110971194711,
+                    "TN": 5445423,
+                    "TP": 5092,
+                    "n_pred": 5474,
+                    "n_ref": 5971
+                },
+                "2": {
+                    "Dice": 0.0,
+                    "FN": 0,
+                    "FP": 2014,
+                    "IoU": 0.0,
+                    "TN": 5449762,
+                    "TP": 0,
+                    "n_pred": 2014,
+                    "n_ref": 0
+                }
+            },
+            "prediction_file": "test_preds_fold0/CHUV_008.nii.gz",
+            "reference_file": "data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/CHUV_008.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.7514889009204114,
+                    "FN": 735,
+                    "FP": 183,
+                    "IoU": 0.6019080659150043,
+                    "TN": 5449470,
+                    "TP": 1388,
+                    "n_pred": 1571,
+                    "n_ref": 2123
+                },
+                "2": {
+                    "Dice": 0.8546108567691302,
+                    "FN": 7374,
+                    "FP": 5964,
+                    "IoU": 0.7461314452121282,
+                    "TN": 5399237,
+                    "TP": 39201,
+                    "n_pred": 45165,
+                    "n_ref": 46575
+                }
+            },
+            "prediction_file": "test_preds_fold0/CHUV_012.nii.gz",
+            "reference_file": "data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/CHUV_012.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.915772441656161,
+                    "FN": 2015,
+                    "FP": 6470,
+                    "IoU": 0.8446312165824361,
+                    "TN": 5397164,
+                    "TP": 46127,
+                    "n_pred": 52597,
+                    "n_ref": 48142
+                },
+                "2": {
+                    "Dice": 0.750158338611287,
+                    "FN": 653,
+                    "FP": 6842,
+                    "IoU": 0.6002026990985224,
+                    "TN": 5433029,
+                    "TP": 11252,
+                    "n_pred": 18094,
+                    "n_ref": 11905
+                }
+            },
+            "prediction_file": "test_preds_fold0/HGJ_007.nii.gz",
+            "reference_file": "data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/HGJ_007.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.686730884454072,
+                    "FN": 2454,
+                    "FP": 4343,
+                    "IoU": 0.5229171053555134,
+                    "TN": 5437529,
+                    "TP": 7450,
+                    "n_pred": 11793,
+                    "n_ref": 9904
+                },
+                "2": {
+                    "Dice": 0.14746543778801843,
+                    "FN": 7166,
+                    "FP": 49,
+                    "IoU": 0.07960199004975124,
+                    "TN": 5443937,
+                    "TP": 624,
+                    "n_pred": 673,
+                    "n_ref": 7790
+                }
+            },
+            "prediction_file": "test_preds_fold0/HGJ_032.nii.gz",
+            "reference_file": "data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/HGJ_032.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9359914391026911,
+                    "FN": 990,
+                    "FP": 625,
+                    "IoU": 0.8796841242643224,
+                    "TN": 5438353,
+                    "TP": 11808,
+                    "n_pred": 12433,
+                    "n_ref": 12798
+                },
+                "2": {
+                    "Dice": 0.7394259818731118,
+                    "FN": 2060,
+                    "FP": 2080,
+                    "IoU": 0.5865787896944278,
+                    "TN": 5441762,
+                    "TP": 5874,
+                    "n_pred": 7954,
+                    "n_ref": 7934
+                }
+            },
+            "prediction_file": "test_preds_fold0/HGJ_035.nii.gz",
+            "reference_file": "data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/HGJ_035.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8183166481275491,
+                    "FN": 247,
+                    "FP": 733,
+                    "IoU": 0.6925007844367744,
+                    "TN": 5448589,
+                    "TP": 2207,
+                    "n_pred": 2940,
+                    "n_ref": 2454
+                },
+                "2": {
+                    "Dice": 0.882082470827456,
+                    "FN": 4218,
+                    "FP": 2219,
+                    "IoU": 0.7890407367351621,
+                    "TN": 5421263,
+                    "TP": 24076,
+                    "n_pred": 26295,
+                    "n_ref": 28294
+                }
+            },
+            "prediction_file": "test_preds_fold0/HGJ_039.nii.gz",
+            "reference_file": "data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/HGJ_039.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.786597526924611,
+                    "FN": 973,
+                    "FP": 97,
+                    "IoU": 0.6482577251808022,
+                    "TN": 5448734,
+                    "TP": 1972,
+                    "n_pred": 2069,
+                    "n_ref": 2945
+                },
+                "2": {
+                    "Dice": 0.8088149445417396,
+                    "FN": 3018,
+                    "FP": 4842,
+                    "IoU": 0.6790002450379808,
+                    "TN": 5427290,
+                    "TP": 16626,
+                    "n_pred": 21468,
+                    "n_ref": 19644
+                }
+            },
+            "prediction_file": "test_preds_fold0/HGJ_070.nii.gz",
+            "reference_file": "data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/HGJ_070.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8825706397227281,
+                    "FN": 920,
+                    "FP": 1079,
+                    "IoU": 0.7898223110083061,
+                    "TN": 5442265,
+                    "TP": 7512,
+                    "n_pred": 8591,
+                    "n_ref": 8432
+                },
+                "2": {
+                    "Dice": 0.47883477469276287,
+                    "FN": 229,
+                    "FP": 916,
+                    "IoU": 0.3147815679233992,
+                    "TN": 5450105,
+                    "TP": 526,
+                    "n_pred": 1442,
+                    "n_ref": 755
+                }
+            },
+            "prediction_file": "test_preds_fold0/HGJ_078.nii.gz",
+            "reference_file": "data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/HGJ_078.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.6493820758793536,
+                    "FN": 38,
+                    "FP": 4019,
+                    "IoU": 0.48080368569234705,
+                    "TN": 5443962,
+                    "TP": 3757,
+                    "n_pred": 7776,
+                    "n_ref": 3795
+                },
+                "2": {
+                    "Dice": 0.0,
+                    "FN": 0,
+                    "FP": 3176,
+                    "IoU": 0.0,
+                    "TN": 5448600,
+                    "TP": 0,
+                    "n_pred": 3176,
+                    "n_ref": 0
+                }
+            },
+            "prediction_file": "test_preds_fold0/HGJ_087.nii.gz",
+            "reference_file": "data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/HGJ_087.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8443295227726365,
+                    "FN": 16125,
+                    "FP": 1033,
+                    "IoU": 0.7305971203818555,
+                    "TN": 5388087,
+                    "TP": 46531,
+                    "n_pred": 47564,
+                    "n_ref": 62656
+                },
+                "2": {
+                    "Dice": 0.5873940677966102,
+                    "FN": 2212,
+                    "FP": 904,
+                    "IoU": 0.4158230221222347,
+                    "TN": 5446442,
+                    "TP": 2218,
+                    "n_pred": 3122,
+                    "n_ref": 4430
+                }
+            },
+            "prediction_file": "test_preds_fold0/HMR_005.nii.gz",
+            "reference_file": "data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/HMR_005.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8753062126019036,
+                    "FN": 14959,
+                    "FP": 566,
+                    "IoU": 0.7782618010426338,
+                    "TN": 5381761,
+                    "TP": 54490,
+                    "n_pred": 55056,
+                    "n_ref": 69449
+                },
+                "2": {
+                    "Dice": 0.6953158573270305,
+                    "FN": 4149,
+                    "FP": 2232,
+                    "IoU": 0.5329380764163373,
+                    "TN": 5438114,
+                    "TP": 7281,
+                    "n_pred": 9513,
+                    "n_ref": 11430
+                }
+            },
+            "prediction_file": "test_preds_fold0/MDA_017.nii.gz",
+            "reference_file": "data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/MDA_017.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8597094472620992,
+                    "FN": 6044,
+                    "FP": 484,
+                    "IoU": 0.7539389370523936,
+                    "TN": 5425246,
+                    "TP": 20002,
+                    "n_pred": 20486,
+                    "n_ref": 26046
+                },
+                "2": {
+                    "Dice": 0.5699412915851272,
+                    "FN": 10055,
+                    "FP": 933,
+                    "IoU": 0.3985439816081887,
+                    "TN": 5433507,
+                    "TP": 7281,
+                    "n_pred": 8214,
+                    "n_ref": 17336
+                }
+            },
+            "prediction_file": "test_preds_fold0/MDA_018.nii.gz",
+            "reference_file": "data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/MDA_018.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.0,
+                    "FN": 0,
+                    "FP": 4320,
+                    "IoU": 0.0,
+                    "TN": 5447456,
+                    "TP": 0,
+                    "n_pred": 4320,
+                    "n_ref": 0
+                },
+                "2": {
+                    "Dice": 0.7347091371317481,
+                    "FN": 847,
+                    "FP": 2701,
+                    "IoU": 0.5806642240869874,
+                    "TN": 5443315,
+                    "TP": 4913,
+                    "n_pred": 7614,
+                    "n_ref": 5760
+                }
+            },
+            "prediction_file": "test_preds_fold0/MDA_029.nii.gz",
+            "reference_file": "data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/MDA_029.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.7566921941965854,
+                    "FN": 2805,
+                    "FP": 658,
+                    "IoU": 0.608612115732369,
+                    "TN": 5442928,
+                    "TP": 5385,
+                    "n_pred": 6043,
+                    "n_ref": 8190
+                },
+                "2": {
+                    "Dice": 0.3465634956759217,
+                    "FN": 725,
+                    "FP": 13631,
+                    "IoU": 0.20960193800583604,
+                    "TN": 5433613,
+                    "TP": 3807,
+                    "n_pred": 17438,
+                    "n_ref": 4532
+                }
+            },
+            "prediction_file": "test_preds_fold0/MDA_043.nii.gz",
+            "reference_file": "data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/MDA_043.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.7768461460753612,
+                    "FN": 1577,
+                    "FP": 632,
+                    "IoU": 0.6351172778328378,
+                    "TN": 5445722,
+                    "TP": 3845,
+                    "n_pred": 4477,
+                    "n_ref": 5422
+                },
+                "2": {
+                    "Dice": 0.0,
+                    "FN": 0,
+                    "FP": 17419,
+                    "IoU": 0.0,
+                    "TN": 5434357,
+                    "TP": 0,
+                    "n_pred": 17419,
+                    "n_ref": 0
+                }
+            },
+            "prediction_file": "test_preds_fold0/MDA_052.nii.gz",
+            "reference_file": "data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/MDA_052.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8438164045898853,
+                    "FN": 1198,
+                    "FP": 272,
+                    "IoU": 0.729829075537585,
+                    "TN": 5446335,
+                    "TP": 3971,
+                    "n_pred": 4243,
+                    "n_ref": 5169
+                },
+                "2": {
+                    "Dice": 0.8135352639249731,
+                    "FN": 1352,
+                    "FP": 13361,
+                    "IoU": 0.6856801042534555,
+                    "TN": 5404967,
+                    "TP": 32096,
+                    "n_pred": 45457,
+                    "n_ref": 33448
+                }
+            },
+            "prediction_file": "test_preds_fold0/MDA_062.nii.gz",
+            "reference_file": "data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/MDA_062.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.922752736804235,
+                    "FN": 1444,
+                    "FP": 1562,
+                    "IoU": 0.8565839694656489,
+                    "TN": 5430816,
+                    "TP": 17954,
+                    "n_pred": 19516,
+                    "n_ref": 19398
+                },
+                "2": {
+                    "Dice": 0.7987982259525966,
+                    "FN": 2377,
+                    "FP": 6061,
+                    "IoU": 0.6649992059710973,
+                    "TN": 5426588,
+                    "TP": 16750,
+                    "n_pred": 22811,
+                    "n_ref": 19127
+                }
+            },
+            "prediction_file": "test_preds_fold0/MDA_065.nii.gz",
+            "reference_file": "data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/MDA_065.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.7979867307252345,
+                    "FN": 639,
+                    "FP": 244,
+                    "IoU": 0.6638751427483822,
+                    "TN": 5449149,
+                    "TP": 1744,
+                    "n_pred": 1988,
+                    "n_ref": 2383
+                },
+                "2": {
+                    "Dice": 0.7709750855282402,
+                    "FN": 7879,
+                    "FP": 28137,
+                    "IoU": 0.6273063112472449,
+                    "TN": 5355139,
+                    "TP": 60621,
+                    "n_pred": 88758,
+                    "n_ref": 68500
+                }
+            },
+            "prediction_file": "test_preds_fold0/MDA_079.nii.gz",
+            "reference_file": "data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/MDA_079.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.7176236189096178,
+                    "FN": 226,
+                    "FP": 4451,
+                    "IoU": 0.5596045197740113,
+                    "TN": 5441156,
+                    "TP": 5943,
+                    "n_pred": 10394,
+                    "n_ref": 6169
+                },
+                "2": {
+                    "Dice": 0.8234466154273544,
+                    "FN": 4540,
+                    "FP": 4993,
+                    "IoU": 0.6998803677118751,
+                    "TN": 5420012,
+                    "TP": 22231,
+                    "n_pred": 27224,
+                    "n_ref": 26771
+                }
+            },
+            "prediction_file": "test_preds_fold0/MDA_084.nii.gz",
+            "reference_file": "data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/MDA_084.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8414912849200122,
+                    "FN": 279,
+                    "FP": 4368,
+                    "IoU": 0.7263573195147803,
+                    "TN": 5434794,
+                    "TP": 12335,
+                    "n_pred": 16703,
+                    "n_ref": 12614
+                },
+                "2": {
+                    "Dice": 0.7802546334570926,
+                    "FN": 6293,
+                    "FP": 8326,
+                    "IoU": 0.639686491016193,
+                    "TN": 5411203,
+                    "TP": 25954,
+                    "n_pred": 34280,
+                    "n_ref": 32247
+                }
+            },
+            "prediction_file": "test_preds_fold0/MDA_088.nii.gz",
+            "reference_file": "data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/MDA_088.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.7913094886195684,
+                    "FN": 1107,
+                    "FP": 305,
+                    "IoU": 0.6546832966495476,
+                    "TN": 5447687,
+                    "TP": 2677,
+                    "n_pred": 2982,
+                    "n_ref": 3784
+                },
+                "2": {
+                    "Dice": 0.7910133843212237,
+                    "FN": 705,
+                    "FP": 1481,
+                    "IoU": 0.6542780325794718,
+                    "TN": 5445453,
+                    "TP": 4137,
+                    "n_pred": 5618,
+                    "n_ref": 4842
+                }
+            },
+            "prediction_file": "test_preds_fold0/MDA_099.nii.gz",
+            "reference_file": "data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/MDA_099.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.5485050333049531,
+                    "FN": 18030,
+                    "FP": 0,
+                    "IoU": 0.37788972465668347,
+                    "TN": 5422794,
+                    "TP": 10952,
+                    "n_pred": 10952,
+                    "n_ref": 28982
+                },
+                "2": {
+                    "Dice": 0.6760925449871465,
+                    "FN": 1139,
+                    "FP": 1381,
+                    "IoU": 0.5106796116504855,
+                    "TN": 5446626,
+                    "TP": 2630,
+                    "n_pred": 4011,
+                    "n_ref": 3769
+                }
+            },
+            "prediction_file": "test_preds_fold0/MDA_104.nii.gz",
+            "reference_file": "data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/MDA_104.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.7392701833995085,
+                    "FN": 875,
+                    "FP": 504,
+                    "IoU": 0.586382723455309,
+                    "TN": 5448442,
+                    "TP": 1955,
+                    "n_pred": 2459,
+                    "n_ref": 2830
+                },
+                "2": {
+                    "Dice": 0.5860684222719901,
+                    "FN": 1092,
+                    "FP": 9628,
+                    "IoU": 0.41449560325522966,
+                    "TN": 5433467,
+                    "TP": 7589,
+                    "n_pred": 17217,
+                    "n_ref": 8681
+                }
+            },
+            "prediction_file": "test_preds_fold0/MDA_112.nii.gz",
+            "reference_file": "data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/MDA_112.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.6843971631205674,
+                    "FN": 141,
+                    "FP": 1105,
+                    "IoU": 0.5202156334231806,
+                    "TN": 5449179,
+                    "TP": 1351,
+                    "n_pred": 2456,
+                    "n_ref": 1492
+                },
+                "2": {
+                    "Dice": 0.43968662803176645,
+                    "FN": 118,
+                    "FP": 10324,
+                    "IoU": 0.2817937959969737,
+                    "TN": 5437237,
+                    "TP": 4097,
+                    "n_pred": 14421,
+                    "n_ref": 4215
+                }
+            },
+            "prediction_file": "test_preds_fold0/MDA_119.nii.gz",
+            "reference_file": "data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/MDA_119.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.6933352459163364,
+                    "FN": 3095,
+                    "FP": 14008,
+                    "IoU": 0.5306144852759558,
+                    "TN": 5415339,
+                    "TP": 19334,
+                    "n_pred": 33342,
+                    "n_ref": 22429
+                },
+                "2": {
+                    "Dice": 0.6549405391943216,
+                    "FN": 7039,
+                    "FP": 4045,
+                    "IoU": 0.48692311253066706,
+                    "TN": 5430173,
+                    "TP": 10519,
+                    "n_pred": 14564,
+                    "n_ref": 17558
+                }
+            },
+            "prediction_file": "test_preds_fold0/MDA_136.nii.gz",
+            "reference_file": "data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/MDA_136.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8932553772770555,
+                    "FN": 6214,
+                    "FP": 5781,
+                    "IoU": 0.8071016194136661,
+                    "TN": 5389593,
+                    "TP": 50188,
+                    "n_pred": 55969,
+                    "n_ref": 56402
+                },
+                "2": {
+                    "Dice": 0.7830943044228019,
+                    "FN": 31245,
+                    "FP": 4100,
+                    "IoU": 0.643512728446363,
+                    "TN": 5352628,
+                    "TP": 63803,
+                    "n_pred": 67903,
+                    "n_ref": 95048
+                }
+            },
+            "prediction_file": "test_preds_fold0/MDA_159.nii.gz",
+            "reference_file": "data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/MDA_159.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8479130931961121,
+                    "FN": 328,
+                    "FP": 1268,
+                    "IoU": 0.7359801488833747,
+                    "TN": 5445731,
+                    "TP": 4449,
+                    "n_pred": 5717,
+                    "n_ref": 4777
+                },
+                "2": {
+                    "Dice": 0.9220830777003861,
+                    "FN": 650,
+                    "FP": 1509,
+                    "IoU": 0.8554305611356636,
+                    "TN": 5436842,
+                    "TP": 12775,
+                    "n_pred": 14284,
+                    "n_ref": 13425
+                }
+            },
+            "prediction_file": "test_preds_fold0/MDA_161.nii.gz",
+            "reference_file": "data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/MDA_161.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8371756622366875,
+                    "FN": 1315,
+                    "FP": 486,
+                    "IoU": 0.7199502410200591,
+                    "TN": 5445345,
+                    "TP": 4630,
+                    "n_pred": 5116,
+                    "n_ref": 5945
+                },
+                "2": {
+                    "Dice": 0.892504857270961,
+                    "FN": 2977,
+                    "FP": 2777,
+                    "IoU": 0.8058769947032827,
+                    "TN": 5422135,
+                    "TP": 23887,
+                    "n_pred": 26664,
+                    "n_ref": 26864
+                }
+            },
+            "prediction_file": "test_preds_fold0/MDA_167.nii.gz",
+            "reference_file": "data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/MDA_167.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.7216434047572243,
+                    "FN": 2784,
+                    "FP": 48,
+                    "IoU": 0.5645086882977087,
+                    "TN": 5445273,
+                    "TP": 3671,
+                    "n_pred": 3719,
+                    "n_ref": 6455
+                },
+                "2": {
+                    "Dice": 0.3259104008383547,
+                    "FN": 423,
+                    "FP": 2150,
+                    "IoU": 0.19467918622848202,
+                    "TN": 5448581,
+                    "TP": 622,
+                    "n_pred": 2772,
+                    "n_ref": 1045
+                }
+            },
+            "prediction_file": "test_preds_fold0/MDA_171.nii.gz",
+            "reference_file": "data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/MDA_171.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.7137497241227102,
+                    "FN": 93,
+                    "FP": 1204,
+                    "IoU": 0.5549073438572409,
+                    "TN": 5448862,
+                    "TP": 1617,
+                    "n_pred": 2821,
+                    "n_ref": 1710
+                },
+                "2": {
+                    "Dice": 0.8584863278325197,
+                    "FN": 2922,
+                    "FP": 1803,
+                    "IoU": 0.752059610641759,
+                    "TN": 5432719,
+                    "TP": 14332,
+                    "n_pred": 16135,
+                    "n_ref": 17254
+                }
+            },
+            "prediction_file": "test_preds_fold0/MDA_174.nii.gz",
+            "reference_file": "data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/MDA_174.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.7017217428982885,
+                    "FN": 21880,
+                    "FP": 1525,
+                    "IoU": 0.5405018061881577,
+                    "TN": 5400840,
+                    "TP": 27531,
+                    "n_pred": 29056,
+                    "n_ref": 49411
+                },
+                "2": {
+                    "Dice": 0.38906780398642177,
+                    "FN": 27232,
+                    "FP": 844,
+                    "IoU": 0.24151718175923925,
+                    "TN": 5414760,
+                    "TP": 8940,
+                    "n_pred": 9784,
+                    "n_ref": 36172
+                }
+            },
+            "prediction_file": "test_preds_fold0/MDA_176.nii.gz",
+            "reference_file": "data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/MDA_176.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8151815181518152,
+                    "FN": 358,
+                    "FP": 2106,
+                    "IoU": 0.6880222841225627,
+                    "TN": 5443878,
+                    "TP": 5434,
+                    "n_pred": 7540,
+                    "n_ref": 5792
+                },
+                "2": {
+                    "Dice": 0.0,
+                    "FN": 0,
+                    "FP": 3070,
+                    "IoU": 0.0,
+                    "TN": 5448706,
+                    "TP": 0,
+                    "n_pred": 3070,
+                    "n_ref": 0
+                }
+            },
+            "prediction_file": "test_preds_fold0/MDA_188.nii.gz",
+            "reference_file": "data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/MDA_188.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.0,
+                    "FN": 0,
+                    "FP": 4290,
+                    "IoU": 0.0,
+                    "TN": 5447486,
+                    "TP": 0,
+                    "n_pred": 4290,
+                    "n_ref": 0
+                },
+                "2": {
+                    "Dice": 0.7310513447432763,
+                    "FN": 829,
+                    "FP": 1591,
+                    "IoU": 0.5761078998073218,
+                    "TN": 5446067,
+                    "TP": 3289,
+                    "n_pred": 4880,
+                    "n_ref": 4118
+                }
+            },
+            "prediction_file": "test_preds_fold0/MDA_201.nii.gz",
+            "reference_file": "data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/MDA_201.nii.gz"
+        }
+    ]
+}

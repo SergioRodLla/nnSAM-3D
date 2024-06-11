@@ -1,0 +1,9 @@
+nnUNet_changes/
+
+#Do not ignore
+nnUNet_changes/nnunetv2/training/nnUNetTrainer/variants/network_architecture/nnUNetTrainer_MCDropout.py
+nnUNet_changes/nnunetv2/utilities/get_network_from_plans_plusDropout.py
+
+nnUNet_changes/nnunetv2/inference/predict_with_uncertainty.py
+nnUNet_changes/nnunetv2/inference/predict_from_raw_data.py
+
