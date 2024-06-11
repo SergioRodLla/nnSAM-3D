@@ -1,9 +1,18 @@
+# Ignore the entire folder
 nnUNet_changes/
 
-#Do not ignore
-nnUNet_changes/nnunetv2/training/nnUNetTrainer/variants/network_architecture/nnUNetTrainer_MCDropout.py
-nnUNet_changes/nnunetv2/utilities/get_network_from_plans_plusDropout.py
+# Do not ignore specific files
+!nnUNet_changes/nnunetv2/training/nnUNetTrainer/variants/network_architecture/nnUNetTrainer_MCDropout.py
+!nnUNet_changes/nnunetv2/utilities/get_network_from_plans_plusDropout.py
+!nnUNet_changes/nnunetv2/inference/predict_with_uncertainty.py
+!nnUNet_changes/nnunetv2/inference/predict_from_raw_data.py
 
-nnUNet_changes/nnunetv2/inference/predict_with_uncertainty.py
-nnUNet_changes/nnunetv2/inference/predict_from_raw_data.py
+# Ensure parent directories are not ignored
+!nnUNet_changes/nnunetv2/
+!nnUNet_changes/nnunetv2/training/
+!nnUNet_changes/nnunetv2/training/nnUNetTrainer/
+!nnUNet_changes/nnunetv2/training/nnUNetTrainer/variants/
+!nnUNet_changes/nnunetv2/training/nnUNetTrainer/variants/network_architecture/
+!nnUNet_changes/nnunetv2/utilities/
+!nnUNet_changes/nnunetv2/inference/
 
