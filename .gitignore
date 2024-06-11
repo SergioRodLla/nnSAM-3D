@@ -1,5 +1,5 @@
 # Ignore the entire folder
-nnUNet_changes/*
+nnUNet_changes/**
 
 # Do not ignore specific files
 !nnUNet_changes/nnunetv2/training/nnUNetTrainer/variants/network_architecture/nnUNetTrainer_MCDropout.py
