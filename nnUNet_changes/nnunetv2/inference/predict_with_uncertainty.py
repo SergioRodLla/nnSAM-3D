@@ -33,6 +33,7 @@ def predict_with_uncertainty(predictor: nnUNetPredictor,
         for i, model_dir in enumerate(model_dirs):
             predictor.network.train()  # Enable dropout
             with torch.no_grad():
+                # BAD APPROACH: Need to take into account preprocessing images (CT + PT concat + normalization per patient, etc)
                 pred = predictor.predict_from_files(
                     list_of_lists_or_source_folder=[[patient_file]],
                     output_folder_or_list_of_truncated_output_files=None,
