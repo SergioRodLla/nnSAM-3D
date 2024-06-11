@@ -8,6 +8,7 @@ nnUNet_changes/
 !nnUNet_changes/nnunetv2/inference/predict_from_raw_data.py
 
 # Ensure parent directories are not ignored
+!nnUNet_changes/.gitkeep
 !nnUNet_changes/nnunetv2/
 !nnUNet_changes/nnunetv2/training/
 !nnUNet_changes/nnunetv2/training/nnUNetTrainer/
@@ -15,4 +16,3 @@ nnUNet_changes/
 !nnUNet_changes/nnunetv2/training/nnUNetTrainer/variants/network_architecture/
 !nnUNet_changes/nnunetv2/utilities/
 !nnUNet_changes/nnunetv2/inference/
-
