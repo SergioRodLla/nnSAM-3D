@@ -6,6 +6,7 @@ nnUNet_changes/**
 !nnUNet_changes/nnunetv2/utilities/get_network_from_plans_plusDropout.py
 !nnUNet_changes/nnunetv2/inference/predict_with_uncertainty.py
 !nnUNet_changes/nnunetv2/inference/predict_from_raw_data.py
+!nnUNet_changes/nnunetv2/inference/voting.py
 
 # Ensure parent directories are not ignored
 !nnUNet_changes/nnunetv2/
