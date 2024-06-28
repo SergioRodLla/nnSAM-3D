@@ -1,0 +1,1414 @@
+{
+    "foreground_mean": {
+        "Dice": 0.6792646624115775,
+        "FN": 4340.7169811320755,
+        "FP": 2004.0566037735848,
+        "IoU": 0.558583659535241,
+        "TN": 5434169.0,
+        "TP": 11262.226415094341,
+        "n_pred": 13266.283018867925,
+        "n_ref": 15602.943396226416
+    },
+    "mean": {
+        "1": {
+            "Dice": 0.7419962068720899,
+            "FN": 3563.9056603773583,
+            "FP": 1103.0,
+            "IoU": 0.624215816048225,
+            "TN": 5436185.188679245,
+            "TP": 10923.905660377359,
+            "n_pred": 12026.905660377359,
+            "n_ref": 14487.811320754718
+        },
+        "2": {
+            "Dice": 0.616533117951065,
+            "FN": 5117.528301886792,
+            "FP": 2905.1132075471696,
+            "IoU": 0.49295150302225715,
+            "TN": 5432152.811320755,
+            "TP": 11600.547169811322,
+            "n_pred": 14505.66037735849,
+            "n_ref": 16718.075471698114
+        }
+    },
+    "metric_per_case": [
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8437136688257765,
+                    "FN": 1786,
+                    "FP": 96,
+                    "IoU": 0.7296753806377477,
+                    "TN": 5444814,
+                    "TP": 5080,
+                    "n_pred": 5176,
+                    "n_ref": 6866
+                },
+                "2": {
+                    "Dice": 0.7254773384763742,
+                    "FN": 4547,
+                    "FP": 2570,
+                    "IoU": 0.569214938563041,
+                    "TN": 5435255,
+                    "TP": 9404,
+                    "n_pred": 11974,
+                    "n_ref": 13951
+                }
+            },
+            "prediction_file": "hecktor/hecktor/test_preds_MCD/voting/EnableDropout_moderate_certainty/CHUM_008.nii.gz",
+            "reference_file": "hecktor/hecktor/data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/CHUM_008.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.30982452218620765,
+                    "FN": 6159,
+                    "FP": 16,
+                    "IoU": 0.18330908609972227,
+                    "TN": 5444215,
+                    "TP": 1386,
+                    "n_pred": 1402,
+                    "n_ref": 7545
+                },
+                "2": {
+                    "Dice": 0.9200346805388823,
+                    "FN": 3401,
+                    "FP": 1395,
+                    "IoU": 0.8519113197060458,
+                    "TN": 5419390,
+                    "TP": 27590,
+                    "n_pred": 28985,
+                    "n_ref": 30991
+                }
+            },
+            "prediction_file": "hecktor/hecktor/test_preds_MCD/voting/EnableDropout_moderate_certainty/CHUM_036.nii.gz",
+            "reference_file": "hecktor/hecktor/data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/CHUM_036.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8325730904637991,
+                    "FN": 109,
+                    "FP": 5360,
+                    "IoU": 0.7131693501861855,
+                    "TN": 5432709,
+                    "TP": 13598,
+                    "n_pred": 18958,
+                    "n_ref": 13707
+                },
+                "2": {
+                    "Dice": 0.8024523160762943,
+                    "FN": 2043,
+                    "FP": 277,
+                    "IoU": 0.6700796359499431,
+                    "TN": 5444744,
+                    "TP": 4712,
+                    "n_pred": 4989,
+                    "n_ref": 6755
+                }
+            },
+            "prediction_file": "hecktor/hecktor/test_preds_MCD/voting/EnableDropout_moderate_certainty/CHUM_051.nii.gz",
+            "reference_file": "hecktor/hecktor/data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/CHUM_051.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.6754820936639119,
+                    "FN": 581,
+                    "FP": 8,
+                    "IoU": 0.5099833610648918,
+                    "TN": 5450574,
+                    "TP": 613,
+                    "n_pred": 621,
+                    "n_ref": 1194
+                },
+                "2": {
+                    "Dice": 0.5949135300101729,
+                    "FN": 1903,
+                    "FP": 88,
+                    "IoU": 0.4233999420793513,
+                    "TN": 5448323,
+                    "TP": 1462,
+                    "n_pred": 1550,
+                    "n_ref": 3365
+                }
+            },
+            "prediction_file": "hecktor/hecktor/test_preds_MCD/voting/EnableDropout_moderate_certainty/CHUM_054.nii.gz",
+            "reference_file": "hecktor/hecktor/data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/CHUM_054.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8549735915492958,
+                    "FN": 1289,
+                    "FP": 29,
+                    "IoU": 0.7466846050355564,
+                    "TN": 5446573,
+                    "TP": 3885,
+                    "n_pred": 3914,
+                    "n_ref": 5174
+                },
+                "2": {
+                    "Dice": 0.721894858463316,
+                    "FN": 226,
+                    "FP": 4588,
+                    "IoU": 0.5648164888808533,
+                    "TN": 5440714,
+                    "TP": 6248,
+                    "n_pred": 10836,
+                    "n_ref": 6474
+                }
+            },
+            "prediction_file": "hecktor/hecktor/test_preds_MCD/voting/EnableDropout_moderate_certainty/CHUP_008.nii.gz",
+            "reference_file": "hecktor/hecktor/data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/CHUP_008.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8414325655704966,
+                    "FN": 4667,
+                    "FP": 97,
+                    "IoU": 0.7262698230291887,
+                    "TN": 5434372,
+                    "TP": 12640,
+                    "n_pred": 12737,
+                    "n_ref": 17307
+                },
+                "2": {
+                    "Dice": 0.7077955424697867,
+                    "FN": 7039,
+                    "FP": 1496,
+                    "IoU": 0.5477426875794829,
+                    "TN": 5432904,
+                    "TP": 10337,
+                    "n_pred": 11833,
+                    "n_ref": 17376
+                }
+            },
+            "prediction_file": "hecktor/hecktor/test_preds_MCD/voting/EnableDropout_moderate_certainty/CHUP_009.nii.gz",
+            "reference_file": "hecktor/hecktor/data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/CHUP_009.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.7340220038632737,
+                    "FN": 2485,
+                    "FP": 682,
+                    "IoU": 0.579806288974393,
+                    "TN": 5444239,
+                    "TP": 4370,
+                    "n_pred": 5052,
+                    "n_ref": 6855
+                },
+                "2": {
+                    "Dice": 0.6652977412731006,
+                    "FN": 443,
+                    "FP": 46,
+                    "IoU": 0.49846153846153846,
+                    "TN": 5450801,
+                    "TP": 486,
+                    "n_pred": 532,
+                    "n_ref": 929
+                }
+            },
+            "prediction_file": "hecktor/hecktor/test_preds_MCD/voting/EnableDropout_moderate_certainty/CHUP_010.nii.gz",
+            "reference_file": "hecktor/hecktor/data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/CHUP_010.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.0,
+                    "FN": 0,
+                    "FP": 14,
+                    "IoU": 0.0,
+                    "TN": 5451762,
+                    "TP": 0,
+                    "n_pred": 14,
+                    "n_ref": 0
+                },
+                "2": {
+                    "Dice": 0.7113175383551152,
+                    "FN": 58,
+                    "FP": 11627,
+                    "IoU": 0.5519727004332656,
+                    "TN": 5425695,
+                    "TP": 14396,
+                    "n_pred": 26023,
+                    "n_ref": 14454
+                }
+            },
+            "prediction_file": "hecktor/hecktor/test_preds_MCD/voting/EnableDropout_moderate_certainty/CHUP_032.nii.gz",
+            "reference_file": "hecktor/hecktor/data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/CHUP_032.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.7502047502047502,
+                    "FN": 1005,
+                    "FP": 520,
+                    "IoU": 0.6002621231979031,
+                    "TN": 5447961,
+                    "TP": 2290,
+                    "n_pred": 2810,
+                    "n_ref": 3295
+                },
+                "2": {
+                    "Dice": 0.0,
+                    "FN": 1156,
+                    "FP": 388,
+                    "IoU": 0.0,
+                    "TN": 5450232,
+                    "TP": 0,
+                    "n_pred": 388,
+                    "n_ref": 1156
+                }
+            },
+            "prediction_file": "hecktor/hecktor/test_preds_MCD/voting/EnableDropout_moderate_certainty/CHUP_054.nii.gz",
+            "reference_file": "hecktor/hecktor/data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/CHUP_054.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9086234694322193,
+                    "FN": 1716,
+                    "FP": 381,
+                    "IoU": 0.8325481114748862,
+                    "TN": 5439253,
+                    "TP": 10426,
+                    "n_pred": 10807,
+                    "n_ref": 12142
+                },
+                "2": {
+                    "Dice": 0.2417196582530332,
+                    "FN": 13,
+                    "FP": 19424,
+                    "IoU": 0.13747503882848902,
+                    "TN": 5429241,
+                    "TP": 3098,
+                    "n_pred": 22522,
+                    "n_ref": 3111
+                }
+            },
+            "prediction_file": "hecktor/hecktor/test_preds_MCD/voting/EnableDropout_moderate_certainty/CHUP_058.nii.gz",
+            "reference_file": "hecktor/hecktor/data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/CHUP_058.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8241284403669725,
+                    "FN": 229,
+                    "FP": 3605,
+                    "IoU": 0.7008660372942186,
+                    "TN": 5438959,
+                    "TP": 8983,
+                    "n_pred": 12588,
+                    "n_ref": 9212
+                },
+                "2": {
+                    "Dice": 0.7096774193548387,
+                    "FN": 196,
+                    "FP": 1307,
+                    "IoU": 0.55,
+                    "TN": 5448436,
+                    "TP": 1837,
+                    "n_pred": 3144,
+                    "n_ref": 2033
+                }
+            },
+            "prediction_file": "hecktor/hecktor/test_preds_MCD/voting/EnableDropout_moderate_certainty/CHUP_067.nii.gz",
+            "reference_file": "hecktor/hecktor/data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/CHUP_067.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8008090926603737,
+                    "FN": 2030,
+                    "FP": 38,
+                    "IoU": 0.6677911646586345,
+                    "TN": 5445551,
+                    "TP": 4157,
+                    "n_pred": 4195,
+                    "n_ref": 6187
+                },
+                "2": {
+                    "Dice": 0.9109487701128167,
+                    "FN": 11099,
+                    "FP": 2383,
+                    "IoU": 0.8364608983612125,
+                    "TN": 5369337,
+                    "TP": 68957,
+                    "n_pred": 71340,
+                    "n_ref": 80056
+                }
+            },
+            "prediction_file": "hecktor/hecktor/test_preds_MCD/voting/EnableDropout_moderate_certainty/CHUP_070.nii.gz",
+            "reference_file": "hecktor/hecktor/data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/CHUP_070.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.732037691401649,
+                    "FN": 82,
+                    "FP": 1738,
+                    "IoU": 0.5773339526242453,
+                    "TN": 5447470,
+                    "TP": 2486,
+                    "n_pred": 4224,
+                    "n_ref": 2568
+                },
+                "2": {
+                    "Dice": 0.1984732824427481,
+                    "FN": 198,
+                    "FP": 18597,
+                    "IoU": 0.11016949152542373,
+                    "TN": 5430654,
+                    "TP": 2327,
+                    "n_pred": 20924,
+                    "n_ref": 2525
+                }
+            },
+            "prediction_file": "hecktor/hecktor/test_preds_MCD/voting/EnableDropout_moderate_certainty/CHUP_073.nii.gz",
+            "reference_file": "hecktor/hecktor/data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/CHUP_073.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.5553020533677214,
+                    "FN": 4451,
+                    "FP": 32,
+                    "IoU": 0.38437242515792364,
+                    "TN": 5444494,
+                    "TP": 2799,
+                    "n_pred": 2831,
+                    "n_ref": 7250
+                },
+                "2": {
+                    "Dice": 0.0,
+                    "FN": 2974,
+                    "FP": 0,
+                    "IoU": 0.0,
+                    "TN": 5448802,
+                    "TP": 0,
+                    "n_pred": 0,
+                    "n_ref": 2974
+                }
+            },
+            "prediction_file": "hecktor/hecktor/test_preds_MCD/voting/EnableDropout_moderate_certainty/CHUP_074.nii.gz",
+            "reference_file": "hecktor/hecktor/data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/CHUP_074.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8361984468069065,
+                    "FN": 7591,
+                    "FP": 1099,
+                    "IoU": 0.7185060412685044,
+                    "TN": 5420905,
+                    "TP": 22181,
+                    "n_pred": 23280,
+                    "n_ref": 29772
+                },
+                "2": {
+                    "Dice": 0.0,
+                    "FN": 0,
+                    "FP": 587,
+                    "IoU": 0.0,
+                    "TN": 5451189,
+                    "TP": 0,
+                    "n_pred": 587,
+                    "n_ref": 0
+                }
+            },
+            "prediction_file": "hecktor/hecktor/test_preds_MCD/voting/EnableDropout_moderate_certainty/CHUS_022.nii.gz",
+            "reference_file": "hecktor/hecktor/data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/CHUS_022.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9329811907602794,
+                    "FN": 4782,
+                    "FP": 217,
+                    "IoU": 0.8743812036688026,
+                    "TN": 5411981,
+                    "TP": 34796,
+                    "n_pred": 35013,
+                    "n_ref": 39578
+                },
+                "2": {
+                    "Dice": 0.3948317545876105,
+                    "FN": 30028,
+                    "FP": 510,
+                    "IoU": 0.2459753086419753,
+                    "TN": 5411276,
+                    "TP": 9962,
+                    "n_pred": 10472,
+                    "n_ref": 39990
+                }
+            },
+            "prediction_file": "hecktor/hecktor/test_preds_MCD/voting/EnableDropout_moderate_certainty/CHUS_027.nii.gz",
+            "reference_file": "hecktor/hecktor/data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/CHUS_027.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9024369191817475,
+                    "FN": 6587,
+                    "FP": 195,
+                    "IoU": 0.8222187270630177,
+                    "TN": 5413628,
+                    "TP": 31366,
+                    "n_pred": 31561,
+                    "n_ref": 37953
+                },
+                "2": {
+                    "Dice": 0.7061819210637997,
+                    "FN": 3789,
+                    "FP": 365,
+                    "IoU": 0.5458123769954079,
+                    "TN": 5442630,
+                    "TP": 4992,
+                    "n_pred": 5357,
+                    "n_ref": 8781
+                }
+            },
+            "prediction_file": "hecktor/hecktor/test_preds_MCD/voting/EnableDropout_moderate_certainty/CHUS_038.nii.gz",
+            "reference_file": "hecktor/hecktor/data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/CHUS_038.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8827772768259693,
+                    "FN": 8104,
+                    "FP": 216,
+                    "IoU": 0.7901533494753834,
+                    "TN": 5412128,
+                    "TP": 31328,
+                    "n_pred": 31544,
+                    "n_ref": 39432
+                },
+                "2": {
+                    "Dice": 0.8104769258181386,
+                    "FN": 15525,
+                    "FP": 3621,
+                    "IoU": 0.6813461154383863,
+                    "TN": 5391692,
+                    "TP": 40938,
+                    "n_pred": 44559,
+                    "n_ref": 56463
+                }
+            },
+            "prediction_file": "hecktor/hecktor/test_preds_MCD/voting/EnableDropout_moderate_certainty/CHUS_043.nii.gz",
+            "reference_file": "hecktor/hecktor/data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/CHUS_043.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.7787007653537428,
+                    "FN": 4671,
+                    "FP": 71,
+                    "IoU": 0.6376003056935422,
+                    "TN": 5438691,
+                    "TP": 8343,
+                    "n_pred": 8414,
+                    "n_ref": 13014
+                },
+                "2": {
+                    "Dice": 0.6182336182336182,
+                    "FN": 1414,
+                    "FP": 194,
+                    "IoU": 0.44742268041237115,
+                    "TN": 5448866,
+                    "TP": 1302,
+                    "n_pred": 1496,
+                    "n_ref": 2716
+                }
+            },
+            "prediction_file": "hecktor/hecktor/test_preds_MCD/voting/EnableDropout_moderate_certainty/CHUS_068.nii.gz",
+            "reference_file": "hecktor/hecktor/data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/CHUS_068.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.7336071002781825,
+                    "FN": 1965,
+                    "FP": 46,
+                    "IoU": 0.5792887029288702,
+                    "TN": 5446996,
+                    "TP": 2769,
+                    "n_pred": 2815,
+                    "n_ref": 4734
+                },
+                "2": {
+                    "Dice": 0.7303066746843054,
+                    "FN": 5202,
+                    "FP": 180,
+                    "IoU": 0.5751835188254795,
+                    "TN": 5439107,
+                    "TP": 7287,
+                    "n_pred": 7467,
+                    "n_ref": 12489
+                }
+            },
+            "prediction_file": "hecktor/hecktor/test_preds_MCD/voting/EnableDropout_moderate_certainty/CHUS_090.nii.gz",
+            "reference_file": "hecktor/hecktor/data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/CHUS_090.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8794300979519145,
+                    "FN": 1033,
+                    "FP": 321,
+                    "IoU": 0.7848061029879212,
+                    "TN": 5445484,
+                    "TP": 4938,
+                    "n_pred": 5259,
+                    "n_ref": 5971
+                },
+                "2": {
+                    "Dice": NaN,
+                    "FN": 0,
+                    "FP": 0,
+                    "IoU": NaN,
+                    "TN": 5451776,
+                    "TP": 0,
+                    "n_pred": 0,
+                    "n_ref": 0
+                }
+            },
+            "prediction_file": "hecktor/hecktor/test_preds_MCD/voting/EnableDropout_moderate_certainty/CHUV_008.nii.gz",
+            "reference_file": "hecktor/hecktor/data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/CHUV_008.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.6186495176848874,
+                    "FN": 1161,
+                    "FP": 25,
+                    "IoU": 0.4478584729981378,
+                    "TN": 5449628,
+                    "TP": 962,
+                    "n_pred": 987,
+                    "n_ref": 2123
+                },
+                "2": {
+                    "Dice": 0.7934629613482642,
+                    "FN": 14725,
+                    "FP": 1856,
+                    "IoU": 0.6576366376907353,
+                    "TN": 5403345,
+                    "TP": 31850,
+                    "n_pred": 33706,
+                    "n_ref": 46575
+                }
+            },
+            "prediction_file": "hecktor/hecktor/test_preds_MCD/voting/EnableDropout_moderate_certainty/CHUV_012.nii.gz",
+            "reference_file": "hecktor/hecktor/data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/CHUV_012.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9249940976606206,
+                    "FN": 3086,
+                    "FP": 4221,
+                    "IoU": 0.8604549013616485,
+                    "TN": 5399413,
+                    "TP": 45056,
+                    "n_pred": 49277,
+                    "n_ref": 48142
+                },
+                "2": {
+                    "Dice": 0.8136929766379247,
+                    "FN": 864,
+                    "FP": 4192,
+                    "IoU": 0.6859042057526247,
+                    "TN": 5435679,
+                    "TP": 11041,
+                    "n_pred": 15233,
+                    "n_ref": 11905
+                }
+            },
+            "prediction_file": "hecktor/hecktor/test_preds_MCD/voting/EnableDropout_moderate_certainty/HGJ_007.nii.gz",
+            "reference_file": "hecktor/hecktor/data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/HGJ_007.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8733355712207675,
+                    "FN": 2099,
+                    "FP": 165,
+                    "IoU": 0.7751514549607706,
+                    "TN": 5441707,
+                    "TP": 7805,
+                    "n_pred": 7970,
+                    "n_ref": 9904
+                },
+                "2": {
+                    "Dice": 0.0,
+                    "FN": 7790,
+                    "FP": 0,
+                    "IoU": 0.0,
+                    "TN": 5443986,
+                    "TP": 0,
+                    "n_pred": 0,
+                    "n_ref": 7790
+                }
+            },
+            "prediction_file": "hecktor/hecktor/test_preds_MCD/voting/EnableDropout_moderate_certainty/HGJ_032.nii.gz",
+            "reference_file": "hecktor/hecktor/data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/HGJ_032.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9256903697016946,
+                    "FN": 1518,
+                    "FP": 293,
+                    "IoU": 0.8616606829119242,
+                    "TN": 5438685,
+                    "TP": 11280,
+                    "n_pred": 11573,
+                    "n_ref": 12798
+                },
+                "2": {
+                    "Dice": 0.7364572047670639,
+                    "FN": 2496,
+                    "FP": 1396,
+                    "IoU": 0.5828510182207931,
+                    "TN": 5442446,
+                    "TP": 5438,
+                    "n_pred": 6834,
+                    "n_ref": 7934
+                }
+            },
+            "prediction_file": "hecktor/hecktor/test_preds_MCD/voting/EnableDropout_moderate_certainty/HGJ_035.nii.gz",
+            "reference_file": "hecktor/hecktor/data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/HGJ_035.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8291642427768082,
+                    "FN": 316,
+                    "FP": 565,
+                    "IoU": 0.7081815170586286,
+                    "TN": 5448757,
+                    "TP": 2138,
+                    "n_pred": 2703,
+                    "n_ref": 2454
+                },
+                "2": {
+                    "Dice": 0.8701200765705668,
+                    "FN": 5794,
+                    "FP": 923,
+                    "IoU": 0.7700995995482083,
+                    "TN": 5422559,
+                    "TP": 22500,
+                    "n_pred": 23423,
+                    "n_ref": 28294
+                }
+            },
+            "prediction_file": "hecktor/hecktor/test_preds_MCD/voting/EnableDropout_moderate_certainty/HGJ_039.nii.gz",
+            "reference_file": "hecktor/hecktor/data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/HGJ_039.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8116279069767441,
+                    "FN": 851,
+                    "FP": 121,
+                    "IoU": 0.6829745596868885,
+                    "TN": 5448710,
+                    "TP": 2094,
+                    "n_pred": 2215,
+                    "n_ref": 2945
+                },
+                "2": {
+                    "Dice": 0.8171648115712752,
+                    "FN": 5181,
+                    "FP": 1291,
+                    "IoU": 0.6908526391210891,
+                    "TN": 5430841,
+                    "TP": 14463,
+                    "n_pred": 15754,
+                    "n_ref": 19644
+                }
+            },
+            "prediction_file": "hecktor/hecktor/test_preds_MCD/voting/EnableDropout_moderate_certainty/HGJ_070.nii.gz",
+            "reference_file": "hecktor/hecktor/data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/HGJ_070.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8841427735517847,
+                    "FN": 877,
+                    "FP": 1103,
+                    "IoU": 0.7923439958049292,
+                    "TN": 5442241,
+                    "TP": 7555,
+                    "n_pred": 8658,
+                    "n_ref": 8432
+                },
+                "2": {
+                    "Dice": 0.7778608825729244,
+                    "FN": 235,
+                    "FP": 62,
+                    "IoU": 0.6364749082007344,
+                    "TN": 5450959,
+                    "TP": 520,
+                    "n_pred": 582,
+                    "n_ref": 755
+                }
+            },
+            "prediction_file": "hecktor/hecktor/test_preds_MCD/voting/EnableDropout_moderate_certainty/HGJ_078.nii.gz",
+            "reference_file": "hecktor/hecktor/data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/HGJ_078.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.698587861217619,
+                    "FN": 60,
+                    "FP": 3163,
+                    "IoU": 0.536792181661397,
+                    "TN": 5444818,
+                    "TP": 3735,
+                    "n_pred": 6898,
+                    "n_ref": 3795
+                },
+                "2": {
+                    "Dice": 0.0,
+                    "FN": 0,
+                    "FP": 1433,
+                    "IoU": 0.0,
+                    "TN": 5450343,
+                    "TP": 0,
+                    "n_pred": 1433,
+                    "n_ref": 0
+                }
+            },
+            "prediction_file": "hecktor/hecktor/test_preds_MCD/voting/EnableDropout_moderate_certainty/HGJ_087.nii.gz",
+            "reference_file": "hecktor/hecktor/data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/HGJ_087.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8150681722344563,
+                    "FN": 19166,
+                    "FP": 569,
+                    "IoU": 0.687860814551206,
+                    "TN": 5388551,
+                    "TP": 43490,
+                    "n_pred": 44059,
+                    "n_ref": 62656
+                },
+                "2": {
+                    "Dice": 0.619372037914692,
+                    "FN": 2339,
+                    "FP": 231,
+                    "IoU": 0.4486161767860974,
+                    "TN": 5447115,
+                    "TP": 2091,
+                    "n_pred": 2322,
+                    "n_ref": 4430
+                }
+            },
+            "prediction_file": "hecktor/hecktor/test_preds_MCD/voting/EnableDropout_moderate_certainty/HMR_005.nii.gz",
+            "reference_file": "hecktor/hecktor/data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/HMR_005.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8567288327083982,
+                    "FN": 17126,
+                    "FP": 374,
+                    "IoU": 0.7493662546725292,
+                    "TN": 5381953,
+                    "TP": 52323,
+                    "n_pred": 52697,
+                    "n_ref": 69449
+                },
+                "2": {
+                    "Dice": 0.6875158139770254,
+                    "FN": 4637,
+                    "FP": 1538,
+                    "IoU": 0.5238278840222085,
+                    "TN": 5438808,
+                    "TP": 6793,
+                    "n_pred": 8331,
+                    "n_ref": 11430
+                }
+            },
+            "prediction_file": "hecktor/hecktor/test_preds_MCD/voting/EnableDropout_moderate_certainty/MDA_017.nii.gz",
+            "reference_file": "hecktor/hecktor/data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/MDA_017.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8529712112982075,
+                    "FN": 6417,
+                    "FP": 350,
+                    "IoU": 0.7436353993029247,
+                    "TN": 5425380,
+                    "TP": 19629,
+                    "n_pred": 19979,
+                    "n_ref": 26046
+                },
+                "2": {
+                    "Dice": 0.5211729086309154,
+                    "FN": 11053,
+                    "FP": 492,
+                    "IoU": 0.3524231545882881,
+                    "TN": 5433948,
+                    "TP": 6283,
+                    "n_pred": 6775,
+                    "n_ref": 17336
+                }
+            },
+            "prediction_file": "hecktor/hecktor/test_preds_MCD/voting/EnableDropout_moderate_certainty/MDA_018.nii.gz",
+            "reference_file": "hecktor/hecktor/data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/MDA_018.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.0,
+                    "FN": 0,
+                    "FP": 74,
+                    "IoU": 0.0,
+                    "TN": 5451702,
+                    "TP": 0,
+                    "n_pred": 74,
+                    "n_ref": 0
+                },
+                "2": {
+                    "Dice": 0.7629615082482325,
+                    "FN": 1875,
+                    "FP": 539,
+                    "IoU": 0.6167645658040959,
+                    "TN": 5445477,
+                    "TP": 3885,
+                    "n_pred": 4424,
+                    "n_ref": 5760
+                }
+            },
+            "prediction_file": "hecktor/hecktor/test_preds_MCD/voting/EnableDropout_moderate_certainty/MDA_029.nii.gz",
+            "reference_file": "hecktor/hecktor/data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/MDA_029.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.7621640013610071,
+                    "FN": 2590,
+                    "FP": 905,
+                    "IoU": 0.6157229246838922,
+                    "TN": 5442681,
+                    "TP": 5600,
+                    "n_pred": 6505,
+                    "n_ref": 8190
+                },
+                "2": {
+                    "Dice": 0.568287161797995,
+                    "FN": 1896,
+                    "FP": 2109,
+                    "IoU": 0.39692817346785125,
+                    "TN": 5445135,
+                    "TP": 2636,
+                    "n_pred": 4745,
+                    "n_ref": 4532
+                }
+            },
+            "prediction_file": "hecktor/hecktor/test_preds_MCD/voting/EnableDropout_moderate_certainty/MDA_043.nii.gz",
+            "reference_file": "hecktor/hecktor/data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/MDA_043.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.749003984063745,
+                    "FN": 1944,
+                    "FP": 387,
+                    "IoU": 0.5987261146496815,
+                    "TN": 5445967,
+                    "TP": 3478,
+                    "n_pred": 3865,
+                    "n_ref": 5422
+                },
+                "2": {
+                    "Dice": 0.0,
+                    "FN": 0,
+                    "FP": 5737,
+                    "IoU": 0.0,
+                    "TN": 5446039,
+                    "TP": 0,
+                    "n_pred": 5737,
+                    "n_ref": 0
+                }
+            },
+            "prediction_file": "hecktor/hecktor/test_preds_MCD/voting/EnableDropout_moderate_certainty/MDA_052.nii.gz",
+            "reference_file": "hecktor/hecktor/data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/MDA_052.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8565336582394152,
+                    "FN": 951,
+                    "FP": 462,
+                    "IoU": 0.7490676611614278,
+                    "TN": 5446145,
+                    "TP": 4218,
+                    "n_pred": 4680,
+                    "n_ref": 5169
+                },
+                "2": {
+                    "Dice": 0.8294292225343155,
+                    "FN": 2147,
+                    "FP": 10727,
+                    "IoU": 0.708568194680249,
+                    "TN": 5407601,
+                    "TP": 31301,
+                    "n_pred": 42028,
+                    "n_ref": 33448
+                }
+            },
+            "prediction_file": "hecktor/hecktor/test_preds_MCD/voting/EnableDropout_moderate_certainty/MDA_062.nii.gz",
+            "reference_file": "hecktor/hecktor/data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/MDA_062.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9214613299979154,
+                    "FN": 1717,
+                    "FP": 1297,
+                    "IoU": 0.8543609567528389,
+                    "TN": 5431081,
+                    "TP": 17681,
+                    "n_pred": 18978,
+                    "n_ref": 19398
+                },
+                "2": {
+                    "Dice": 0.8091421636791141,
+                    "FN": 3125,
+                    "FP": 4424,
+                    "IoU": 0.6794615939875165,
+                    "TN": 5428225,
+                    "TP": 16002,
+                    "n_pred": 20426,
+                    "n_ref": 19127
+                }
+            },
+            "prediction_file": "hecktor/hecktor/test_preds_MCD/voting/EnableDropout_moderate_certainty/MDA_065.nii.gz",
+            "reference_file": "hecktor/hecktor/data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/MDA_065.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8042857142857143,
+                    "FN": 694,
+                    "FP": 128,
+                    "IoU": 0.6726403823178017,
+                    "TN": 5449265,
+                    "TP": 1689,
+                    "n_pred": 1817,
+                    "n_ref": 2383
+                },
+                "2": {
+                    "Dice": 0.7801538833109064,
+                    "FN": 11972,
+                    "FP": 19887,
+                    "IoU": 0.6395510652018962,
+                    "TN": 5363389,
+                    "TP": 56528,
+                    "n_pred": 76415,
+                    "n_ref": 68500
+                }
+            },
+            "prediction_file": "hecktor/hecktor/test_preds_MCD/voting/EnableDropout_moderate_certainty/MDA_079.nii.gz",
+            "reference_file": "hecktor/hecktor/data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/MDA_079.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.817599870350863,
+                    "FN": 1124,
+                    "FP": 1127,
+                    "IoU": 0.6914747807017544,
+                    "TN": 5444480,
+                    "TP": 5045,
+                    "n_pred": 6172,
+                    "n_ref": 6169
+                },
+                "2": {
+                    "Dice": 0.8714591856614066,
+                    "FN": 4405,
+                    "FP": 2193,
+                    "IoU": 0.7721999723795056,
+                    "TN": 5422812,
+                    "TP": 22366,
+                    "n_pred": 24559,
+                    "n_ref": 26771
+                }
+            },
+            "prediction_file": "hecktor/hecktor/test_preds_MCD/voting/EnableDropout_moderate_certainty/MDA_084.nii.gz",
+            "reference_file": "hecktor/hecktor/data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/MDA_084.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8690323500071255,
+                    "FN": 418,
+                    "FP": 3258,
+                    "IoU": 0.7683971774193549,
+                    "TN": 5435904,
+                    "TP": 12196,
+                    "n_pred": 15454,
+                    "n_ref": 12614
+                },
+                "2": {
+                    "Dice": 0.7834112228087281,
+                    "FN": 8946,
+                    "FP": 3938,
+                    "IoU": 0.643940859472157,
+                    "TN": 5415591,
+                    "TP": 23301,
+                    "n_pred": 27239,
+                    "n_ref": 32247
+                }
+            },
+            "prediction_file": "hecktor/hecktor/test_preds_MCD/voting/EnableDropout_moderate_certainty/MDA_088.nii.gz",
+            "reference_file": "hecktor/hecktor/data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/MDA_088.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.7488810001543448,
+                    "FN": 1358,
+                    "FP": 269,
+                    "IoU": 0.5985689612632618,
+                    "TN": 5447723,
+                    "TP": 2426,
+                    "n_pred": 2695,
+                    "n_ref": 3784
+                },
+                "2": {
+                    "Dice": 0.8166552096631641,
+                    "FN": 684,
+                    "FP": 1183,
+                    "IoU": 0.6901244813278008,
+                    "TN": 5445751,
+                    "TP": 4158,
+                    "n_pred": 5341,
+                    "n_ref": 4842
+                }
+            },
+            "prediction_file": "hecktor/hecktor/test_preds_MCD/voting/EnableDropout_moderate_certainty/MDA_099.nii.gz",
+            "reference_file": "hecktor/hecktor/data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/MDA_099.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.4923661143912399,
+                    "FN": 19517,
+                    "FP": 0,
+                    "IoU": 0.3265820164239873,
+                    "TN": 5422794,
+                    "TP": 9465,
+                    "n_pred": 9465,
+                    "n_ref": 28982
+                },
+                "2": {
+                    "Dice": 0.6020848310567937,
+                    "FN": 2094,
+                    "FP": 120,
+                    "IoU": 0.4307019799434302,
+                    "TN": 5447887,
+                    "TP": 1675,
+                    "n_pred": 1795,
+                    "n_ref": 3769
+                }
+            },
+            "prediction_file": "hecktor/hecktor/test_preds_MCD/voting/EnableDropout_moderate_certainty/MDA_104.nii.gz",
+            "reference_file": "hecktor/hecktor/data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/MDA_104.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.6459194776931447,
+                    "FN": 1346,
+                    "FP": 281,
+                    "IoU": 0.4770170363227258,
+                    "TN": 5448665,
+                    "TP": 1484,
+                    "n_pred": 1765,
+                    "n_ref": 2830
+                },
+                "2": {
+                    "Dice": 0.6435783879539415,
+                    "FN": 1415,
+                    "FP": 6633,
+                    "IoU": 0.4744678072352096,
+                    "TN": 5436462,
+                    "TP": 7266,
+                    "n_pred": 13899,
+                    "n_ref": 8681
+                }
+            },
+            "prediction_file": "hecktor/hecktor/test_preds_MCD/voting/EnableDropout_moderate_certainty/MDA_112.nii.gz",
+            "reference_file": "hecktor/hecktor/data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/MDA_112.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8138711960368011,
+                    "FN": 342,
+                    "FP": 184,
+                    "IoU": 0.6861575178997613,
+                    "TN": 5450100,
+                    "TP": 1150,
+                    "n_pred": 1334,
+                    "n_ref": 1492
+                },
+                "2": {
+                    "Dice": 0.5366395776897965,
+                    "FN": 352,
+                    "FP": 6319,
+                    "IoU": 0.36671729637364725,
+                    "TN": 5441242,
+                    "TP": 3863,
+                    "n_pred": 10182,
+                    "n_ref": 4215
+                }
+            },
+            "prediction_file": "hecktor/hecktor/test_preds_MCD/voting/EnableDropout_moderate_certainty/MDA_119.nii.gz",
+            "reference_file": "hecktor/hecktor/data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/MDA_119.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.700418487863852,
+                    "FN": 3600,
+                    "FP": 12507,
+                    "IoU": 0.5389569498511564,
+                    "TN": 5416840,
+                    "TP": 18829,
+                    "n_pred": 31336,
+                    "n_ref": 22429
+                },
+                "2": {
+                    "Dice": 0.6145740628671105,
+                    "FN": 8926,
+                    "FP": 1901,
+                    "IoU": 0.4435993627627319,
+                    "TN": 5432317,
+                    "TP": 8632,
+                    "n_pred": 10533,
+                    "n_ref": 17558
+                }
+            },
+            "prediction_file": "hecktor/hecktor/test_preds_MCD/voting/EnableDropout_moderate_certainty/MDA_136.nii.gz",
+            "reference_file": "hecktor/hecktor/data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/MDA_136.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8929258153716556,
+                    "FN": 7642,
+                    "FP": 4052,
+                    "IoU": 0.8065636682436232,
+                    "TN": 5391322,
+                    "TP": 48760,
+                    "n_pred": 52812,
+                    "n_ref": 56402
+                },
+                "2": {
+                    "Dice": 0.7382545079586762,
+                    "FN": 38487,
+                    "FP": 1620,
+                    "IoU": 0.5851057226796872,
+                    "TN": 5355108,
+                    "TP": 56561,
+                    "n_pred": 58181,
+                    "n_ref": 95048
+                }
+            },
+            "prediction_file": "hecktor/hecktor/test_preds_MCD/voting/EnableDropout_moderate_certainty/MDA_159.nii.gz",
+            "reference_file": "hecktor/hecktor/data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/MDA_159.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8073888091822095,
+                    "FN": 275,
+                    "FP": 1873,
+                    "IoU": 0.6769924812030075,
+                    "TN": 5445126,
+                    "TP": 4502,
+                    "n_pred": 6375,
+                    "n_ref": 4777
+                },
+                "2": {
+                    "Dice": 0.9133827847318807,
+                    "FN": 1604,
+                    "FP": 638,
+                    "IoU": 0.840574557349072,
+                    "TN": 5437713,
+                    "TP": 11821,
+                    "n_pred": 12459,
+                    "n_ref": 13425
+                }
+            },
+            "prediction_file": "hecktor/hecktor/test_preds_MCD/voting/EnableDropout_moderate_certainty/MDA_161.nii.gz",
+            "reference_file": "hecktor/hecktor/data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/MDA_161.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8285160217933327,
+                    "FN": 1459,
+                    "FP": 398,
+                    "IoU": 0.7072363235062273,
+                    "TN": 5445433,
+                    "TP": 4486,
+                    "n_pred": 4884,
+                    "n_ref": 5945
+                },
+                "2": {
+                    "Dice": 0.8836657074437043,
+                    "FN": 4908,
+                    "FP": 873,
+                    "IoU": 0.7915780365576667,
+                    "TN": 5424039,
+                    "TP": 21956,
+                    "n_pred": 22829,
+                    "n_ref": 26864
+                }
+            },
+            "prediction_file": "hecktor/hecktor/test_preds_MCD/voting/EnableDropout_moderate_certainty/MDA_167.nii.gz",
+            "reference_file": "hecktor/hecktor/data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/MDA_167.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.7416771205249445,
+                    "FN": 2612,
+                    "FP": 65,
+                    "IoU": 0.5894171779141104,
+                    "TN": 5445256,
+                    "TP": 3843,
+                    "n_pred": 3908,
+                    "n_ref": 6455
+                },
+                "2": {
+                    "Dice": 0.44075021312872975,
+                    "FN": 528,
+                    "FP": 784,
+                    "IoU": 0.2826681246582832,
+                    "TN": 5449947,
+                    "TP": 517,
+                    "n_pred": 1301,
+                    "n_ref": 1045
+                }
+            },
+            "prediction_file": "hecktor/hecktor/test_preds_MCD/voting/EnableDropout_moderate_certainty/MDA_171.nii.gz",
+            "reference_file": "hecktor/hecktor/data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/MDA_171.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.7522216414009409,
+                    "FN": 271,
+                    "FP": 677,
+                    "IoU": 0.6028487641390867,
+                    "TN": 5449389,
+                    "TP": 1439,
+                    "n_pred": 2116,
+                    "n_ref": 1710
+                },
+                "2": {
+                    "Dice": 0.8418399083319692,
+                    "FN": 4397,
+                    "FP": 434,
+                    "IoU": 0.7268769787426503,
+                    "TN": 5434088,
+                    "TP": 12857,
+                    "n_pred": 13291,
+                    "n_ref": 17254
+                }
+            },
+            "prediction_file": "hecktor/hecktor/test_preds_MCD/voting/EnableDropout_moderate_certainty/MDA_174.nii.gz",
+            "reference_file": "hecktor/hecktor/data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/MDA_174.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.6210794241611473,
+                    "FN": 26718,
+                    "FP": 972,
+                    "IoU": 0.45040986046880893,
+                    "TN": 5401393,
+                    "TP": 22693,
+                    "n_pred": 23665,
+                    "n_ref": 49411
+                },
+                "2": {
+                    "Dice": 0.440992060944555,
+                    "FN": 25868,
+                    "FP": 255,
+                    "IoU": 0.282867104071156,
+                    "TN": 5415349,
+                    "TP": 10304,
+                    "n_pred": 10559,
+                    "n_ref": 36172
+                }
+            },
+            "prediction_file": "hecktor/hecktor/test_preds_MCD/voting/EnableDropout_moderate_certainty/MDA_176.nii.gz",
+            "reference_file": "hecktor/hecktor/data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/MDA_176.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8002335595941902,
+                    "FN": 310,
+                    "FP": 2427,
+                    "IoU": 0.6669911181408931,
+                    "TN": 5443557,
+                    "TP": 5482,
+                    "n_pred": 7909,
+                    "n_ref": 5792
+                },
+                "2": {
+                    "Dice": NaN,
+                    "FN": 0,
+                    "FP": 0,
+                    "IoU": NaN,
+                    "TN": 5451776,
+                    "TP": 0,
+                    "n_pred": 0,
+                    "n_ref": 0
+                }
+            },
+            "prediction_file": "hecktor/hecktor/test_preds_MCD/voting/EnableDropout_moderate_certainty/MDA_188.nii.gz",
+            "reference_file": "hecktor/hecktor/data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/MDA_188.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.0,
+                    "FN": 0,
+                    "FP": 1386,
+                    "IoU": 0.0,
+                    "TN": 5450390,
+                    "TP": 0,
+                    "n_pred": 1386,
+                    "n_ref": 0
+                },
+                "2": {
+                    "Dice": 0.7590741714886902,
+                    "FN": 1232,
+                    "FP": 600,
+                    "IoU": 0.6116998728274693,
+                    "TN": 5447058,
+                    "TP": 2886,
+                    "n_pred": 3486,
+                    "n_ref": 4118
+                }
+            },
+            "prediction_file": "hecktor/hecktor/test_preds_MCD/voting/EnableDropout_moderate_certainty/MDA_201.nii.gz",
+            "reference_file": "hecktor/hecktor/data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/labelsTs/MDA_201.nii.gz"
+        }
+    ]
+}
