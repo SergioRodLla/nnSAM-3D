@@ -5,6 +5,12 @@ import SimpleITK as sitk
 #from batchgenerators.utilities.file_and_folder_operations import join
 from nnunetv2.inference.predict_from_raw_data import nnUNetPredictor
 
+# Enable Dropout during inference (model.eval())
+def enable_dropout(model):
+    for m in model.modules():
+        if m.__class__.__name__.startswith('Dropout'):
+            m.train()
+
 def predict_with_uncertainty(predictor: nnUNetPredictor, 
                              input_folder: str, 
                              output_folder: str, 
@@ -29,7 +35,8 @@ def predict_with_uncertainty(predictor: nnUNetPredictor,
     model_dirs = []
     for i in range(num_fwd_passes):
         #i += 15 # !!!!!!!quick fix to generate more folders!!!!!!!!!
-        model_dir = f"model_{i}"
+        # model_dir = f"model_{i}"
+        model_dir = f"EnableDropout_{i}"
         model_path = os.path.join(output_folder, model_dir)
         if not os.path.exists(model_path):
             os.makedirs(model_path)
@@ -41,12 +48,14 @@ def predict_with_uncertainty(predictor: nnUNetPredictor,
     if simulate_models:
         # files must be given as 'list of lists' where each entry in the outer list is a case to be predicted and the inner list contains all the files belonging to that case
         for pat_id in patient_ids:
+            #if pat_id in ['CHUP_032', 'CHUP_070', 'CHUS_022']:
             patient_files_for_id = [file for file in patient_files if pat_id in file]
             # sort the list so that the file ending with _0000.nii.gz is always first
             patient_files_for_id.sort(key=lambda x: x.endswith('_0000.nii.gz'), reverse=True)
             print(patient_files_for_id)
             for i, model_dir in enumerate(model_dirs):
-                predictor.network.train()  # Enable dropout
+                predictor.network.eval()
+                enable_dropout(predictor.network) # Enable dropout
                 with torch.no_grad():
                     pred = predictor.predict_from_files(
                         list_of_lists_or_source_folder=[patient_files_for_id], # has to be 'list of lists'
@@ -95,8 +104,8 @@ def predict_with_uncertainty(predictor: nnUNetPredictor,
 
 def main() -> None:
     model_folder = "/media/HDD_4TB_2/sergio/TFM/hecktor/hecktor/data/nnUNet_results/Dataset500_HeadNeckPTCT/nnUNetTrainer_MCDropout__nnUNetPlans__3d_fullres"
-    input_dir = "/media/HDD_4TB_2/sergio/TFM/hecktor/hecktor/data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/imagesTs"
-    output_dir = "/media/HDD_4TB_2/sergio/TFM/hecktor/hecktor/test_preds_MCD"
+    input_dir = "/media/HDD_4TB_2/sergio/TFM/hecktor/hecktor/data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/imagesTr"
+    output_dir = "/media/HDD_4TB_2/sergio/TFM/hecktor/hecktor/train_preds_MCD"
 
     # Initialize the nnUNetPredictor
     predictor = nnUNetPredictor(
@@ -109,7 +118,7 @@ def main() -> None:
     )
 
     # Perform inference with uncertainty estimation
-    predict_with_uncertainty(predictor, input_dir, output_dir, num_fwd_passes=50, simulate_models=False, compute_entropy=True)
+    predict_with_uncertainty(predictor, input_dir, output_dir, num_fwd_passes=10, simulate_models=True, compute_entropy=False)
 
 if __name__ == "__main__":
     main()

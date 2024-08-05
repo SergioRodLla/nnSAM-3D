@@ -17,6 +17,7 @@ def get_network_from_plans_dropout(plans_manager: PlansManager,
                            configuration_manager: ConfigurationManager,
                            num_input_channels: int,
                            num_output_channels: int, 
+                           drop_prob: int,
                            deep_supervision: bool = True,
                            ):
     """
@@ -50,7 +51,7 @@ def get_network_from_plans_dropout(plans_manager: PlansManager,
             'conv_bias': True,
             'norm_op': get_matching_instancenorm(conv_op),
             'norm_op_kwargs': {'eps': 1e-5, 'affine': True},
-            'dropout_op': nn.Dropout3d, 'dropout_op_kwargs': {'p':0.2}, #change here!
+            'dropout_op': nn.Dropout3d, 'dropout_op_kwargs': {'p':drop_prob}, #change here!
             'nonlin': nn.LeakyReLU, 'nonlin_kwargs': {'inplace': True},
         },
         'ResidualEncoderUNet': {
@@ -64,7 +65,7 @@ def get_network_from_plans_dropout(plans_manager: PlansManager,
             'conv_bias': True,
             'norm_op': get_matching_instancenorm(conv_op),
             'norm_op_kwargs': {'eps': 1e-5, 'affine': True},
-            'dropout_op': nn.Dropout3d, 'dropout_op_kwargs': {'p': 0.2},  # change here!
+            'dropout_op': nn.Dropout3d, 'dropout_op_kwargs': {'p': drop_prob},  # change here!
             'nonlin': nn.LeakyReLU, 'nonlin_kwargs': {'inplace': True},
         },
         'dynamic_network_architectures.architectures.residual_unet.ResidualEncoderUNet': {
