@@ -1,0 +1,14 @@
+{
+    "channel_names": {
+        "0": "CT",
+        "1": "PT"
+    },
+    "labels": {
+        "background": 0,
+        "GTVt": 1,
+        "GTVn": 2
+    },
+    "numTraining": 471,
+    "file_ending": ".nii.gz",
+    "name": "hecktor"
+}
