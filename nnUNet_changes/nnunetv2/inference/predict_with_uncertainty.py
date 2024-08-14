@@ -1,4 +1,5 @@
 import os
+import sys
 import numpy as np
 import torch
 import SimpleITK as sitk
@@ -102,10 +103,26 @@ def predict_with_uncertainty(predictor: nnUNetPredictor,
             sitk.WriteImage(entropy_image, os.path.join(entropy_folder, f'{pat_id}_entropy.nii.gz'))
             print(f"Entropy done for {pat_id}")
 
+def verify_dropout(predictor: nnUNetPredictor) -> None:
+    # set network to evaluation mode
+    predictor.network.eval()
+    # activate only dropout layers
+    enable_dropout(predictor.network)
+
+    # verify dropout layers' status
+    for m in predictor.network.modules():
+        if m.__class__.__name__.startswith('Dropout'):
+            print(f"Layer {m.__class__.__name__} is in training mode: {m.training}")  # should be True
+            # if not m.training:
+            #     raise SystemExit("Dropout layers are not activated (model.train())!!! \n STOPPING...")
+        else:
+            print(f"Layer {m.__class__.__name__} is in training mode: {m.training}")  # should be False
+
+
 def main() -> None:
-    model_folder = "/media/HDD_4TB_2/sergio/TFM/hecktor/hecktor/data/nnUNet_results/Dataset500_HeadNeckPTCT/nnUNetTrainer_MCDropout__nnUNetPlans__3d_fullres"
-    input_dir = "/media/HDD_4TB_2/sergio/TFM/hecktor/hecktor/data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/imagesTr"
-    output_dir = "/media/HDD_4TB_2/sergio/TFM/hecktor/hecktor/train_preds_MCD"
+    model_folder = "/media/HDD_4TB_2/sergio/TFM/hecktor/hecktor/data/nnUNet_results/Dataset500_HeadNeckPTCT/nnUNetTrainer_MCDropout_p03__nnUNetPlans__3d_fullres"
+    input_dir = "/media/HDD_4TB_2/sergio/TFM/hecktor/hecktor/data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/imagesTs"
+    output_dir = "/media/HDD_4TB_2/sergio/TFM/hecktor/hecktor/holdout_preds_MCD_p03"
 
     # Initialize the nnUNetPredictor
     predictor = nnUNetPredictor(
@@ -118,7 +135,8 @@ def main() -> None:
     )
 
     # Perform inference with uncertainty estimation
-    predict_with_uncertainty(predictor, input_dir, output_dir, num_fwd_passes=10, simulate_models=True, compute_entropy=False)
+    #verify_dropout(predictor) # works as expected
+    predict_with_uncertainty(predictor, input_dir, output_dir, num_fwd_passes=50, simulate_models=True, compute_entropy=False)
 
 if __name__ == "__main__":
     main()

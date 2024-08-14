@@ -617,7 +617,7 @@ class nnUNetPredictor(object):
             -> Union[np.ndarray, torch.Tensor]:
         assert isinstance(input_image, torch.Tensor)
         self.network = self.network.to(self.device)
-        self.network.eval()
+        #self.network.eval()
 
         empty_cache(self.device)
 

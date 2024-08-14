@@ -370,7 +370,6 @@ def main():
     output_path = '/media/HDD_4TB_2/sergio/TFM/hecktor/hecktor/test_preds_MCD/voting'
     voting = Voting(model_path, output_path)
     # voting.hard_voting()
-    # print("Hard voting DONE")
     # voting.soft_voting()
     # print("Soft voting DONE")
     # voting.high_certainty(certainty=0.1, text='certainty_01')
@@ -428,12 +427,31 @@ def main():
     #                                           GTVp_avg_thr=0.91, GTVn_avg_thr=0.83, 
     #                                           GTVp_std_thr=0.186, GTVn_std_thr=0.196)
     
-    voting.uncertainty_voting_avg_and_std_thr(outdir_name="2.5p_AVG_99p_STD", 
-                                              GTVp_avg_thr=0.64, GTVn_avg_thr=0.6, 
-                                              GTVp_std_thr=0.205, GTVn_std_thr=0.213)
-    voting.uncertainty_voting_avg_and_std_thr(outdir_name="2.5p_AVG_99.5p_STD", 
-                                              GTVp_avg_thr=0.64, GTVn_avg_thr=0.6, 
+    # voting.uncertainty_voting_avg_and_std_thr(outdir_name="2.5p_AVG_99p_STD", 
+    #                                           GTVp_avg_thr=0.64, GTVn_avg_thr=0.6, 
+    #                                           GTVp_std_thr=0.205, GTVn_std_thr=0.213)
+    # voting.uncertainty_voting_avg_and_std_thr(outdir_name="2.5p_AVG_99.5p_STD", 
+    #                                           GTVp_avg_thr=0.64, GTVn_avg_thr=0.6, 
+    #                                           GTVp_std_thr=0.235, GTVn_std_thr=0.24)
+
+    # voting.uncertainty_voting_avg_and_std_thr(outdir_name="0.5p_AVG_99p_STD", 
+    #                                           GTVp_avg_thr=0.527, GTVn_avg_thr=0.519, 
+    #                                           GTVp_std_thr=0.205, GTVn_std_thr=0.213)
+    # voting.uncertainty_voting_avg_and_std_thr(outdir_name="1p_AVG_99.5p_STD", 
+    #                                           GTVp_avg_thr=0.555, GTVn_avg_thr=0.539, 
+    #                                           GTVp_std_thr=0.235, GTVn_std_thr=0.24)
+    voting.uncertainty_voting_avg_and_std_thr(outdir_name="zero_AVG_99.5p_STD", 
+                                              GTVp_avg_thr=0, GTVn_avg_thr=0, 
                                               GTVp_std_thr=0.235, GTVn_std_thr=0.24)
+    
+    voting.uncertainty_voting_avg_and_std_thr(outdir_name="zero_AVG_97.5p_STD", 
+                                              GTVp_avg_thr=0, GTVn_avg_thr=0, 
+                                              GTVp_std_thr=0.158, GTVn_std_thr=0.173)
+    
+    voting.uncertainty_voting_avg_and_std_thr(outdir_name="zero_AVG_98.5p_STD", 
+                                              GTVp_avg_thr=0, GTVn_avg_thr=0, 
+                                              GTVp_std_thr=0.186, GTVn_std_thr=0.196)
+
     
 if __name__ == "__main__":
     main()

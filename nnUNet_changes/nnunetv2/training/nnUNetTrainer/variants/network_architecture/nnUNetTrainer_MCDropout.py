@@ -29,7 +29,7 @@ from nnunetv2.utilities.label_handling.label_handling import determine_num_input
 #         #print(model) # ensure new model archictecture is correctly set!
         # return model
 
-class nnUNetTrainer_MCDropout_p01(nnUNetTrainer):
+class nnUNetTrainer_MCDropout_p03(nnUNetTrainer):
     @staticmethod
     def build_network_architecture(architecture_class_name: str,
                                    arch_init_kwargs: dict,
@@ -46,11 +46,11 @@ class nnUNetTrainer_MCDropout_p01(nnUNetTrainer):
             configuration_manager=configuration_manager,
             num_input_channels=num_input_channels,
             num_output_channels=num_output_channels,
-            drop_prob=0.1,
+            drop_prob=0.3,
             deep_supervision=enable_deep_supervision
         )
         
-        print("Using model for MCDropout with drop prob. 0.1", "\n")
+        print("Using model for MCDropout with drop prob. 0.3", "\n")
         print(model) # ensure new model archictecture is correctly set!
         return model
 
