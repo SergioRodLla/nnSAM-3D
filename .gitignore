@@ -2,13 +2,15 @@
 nnUNet_changes/**
 
 # Do not ignore specific files
-!nnUNet_changes/nnunetv2/training/nnUNetTrainer/variants/network_architecture/nnUNetTrainer_MCDropout.py
+!nnUNet_changes/nnunetv2/training/nnUNetTrainer/variants/network_architecture/nnUNetTrainer_custom_models.py
 !nnUNet_changes/nnunetv2/training/nnUNetTrainer/STUNetTrainer.py
 !nnUNet_changes/nnunetv2/run/run_finetuning_stunet.py
-!nnUNet_changes/nnunetv2/utilities/get_network_from_plans_plusDropout.py
+!nnUNet_changes/nnunetv2/utilities/get_network_from_plans_custom.py
 !nnUNet_changes/nnunetv2/inference/predict_with_uncertainty.py
 !nnUNet_changes/nnunetv2/inference/predict_from_raw_data.py
 !nnUNet_changes/nnunetv2/inference/voting.py
+!nnUNet_changes/nnunetv2/utilities/unet.py
+!nnUNet_changes/nnunetv2/utilities/unet_decoder.py
 
 # Ensure parent directories are not ignored
 !nnUNet_changes/nnunetv2/
