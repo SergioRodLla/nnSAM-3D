@@ -186,7 +186,7 @@ class SAM3D_Decoder(nn.Module):
             ))
             # input features to conv is 2x input_features_skip (concat input_features_skip with transpconv output)
             if s== (n_stages_encoder - 4):     
-                adjusted_input_features = 2 * input_features_skip + 384
+                adjusted_input_features = 2 * input_features_skip + (384*2) # CT & PET features concat.
                 stages.append(StackedConvBlocks(
                     n_conv_per_stage[s-1], encoder.conv_op, adjusted_input_features, input_features_skip,
                     encoder.kernel_sizes[-(s + 1)], 1, encoder.conv_bias, encoder.norm_op, encoder.norm_op_kwargs,

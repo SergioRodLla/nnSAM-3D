@@ -321,23 +321,36 @@ class Voting:
         
         patient_ids = os.listdir(os.path.join(self.model_path, self.models[0]))
 
+        # for patient_id in patient_ids:
+        #     if patient_id.endswith(".nii.gz"):
+        #         prob_sum = None
+        #         prob_squares_sum = None
+        #         for model in self.models:
+        #             pred = np.load(os.path.join(self.model_path, model, patient_id.replace('.nii.gz', '_logits.npz')))['arr_0']
+        #             if prob_sum is None:
+        #                 prob_sum = pred
+        #                 prob_squares_sum = pred ** 2
+        #             else:
+        #                 prob_sum += pred
+        #                 prob_squares_sum += pred ** 2
+                
+        #         num_models = len(self.models)
+        #         mean_prob = prob_sum / num_models
+        #         epsilon = 1e-6  # A small value to ensure non-negative inside sqrt
+        #         std_prob = np.sqrt(np.maximum(prob_squares_sum / num_models - (mean_prob ** 2), 0) + epsilon)
+
         for patient_id in patient_ids:
             if patient_id.endswith(".nii.gz"):
-                prob_sum = None
-                prob_squares_sum = None
+                prob_list = []
+
                 for model in self.models:
                     pred = np.load(os.path.join(self.model_path, model, patient_id.replace('.nii.gz', '_logits.npz')))['arr_0']
-                    if prob_sum is None:
-                        prob_sum = pred
-                        prob_squares_sum = pred ** 2
-                    else:
-                        prob_sum += pred
-                        prob_squares_sum += pred ** 2
-                
-                num_models = len(self.models)
-                mean_prob = prob_sum / num_models
-                epsilon = 1e-6  # A small value to ensure non-negative inside sqrt
-                std_prob = np.sqrt(np.maximum(prob_squares_sum / num_models - (mean_prob ** 2), 0) + epsilon)
+                    prob_list.append(pred)
+
+                # Stack all predictions to compute mean and std
+                stacked_probs = np.stack(prob_list)
+                mean_prob = np.mean(stacked_probs, axis=0)
+                std_prob = np.std(stacked_probs, axis=0)
 
                 # Initial soft voting without threshold
                 soft_voted = np.argmax(mean_prob, axis=0)
@@ -367,7 +380,7 @@ class Voting:
 
 def main(): 
     model_path = '/media/HDD_4TB_2/sergio/TFM/hecktor/hecktor/test_preds_MCD'
-    output_path = '/media/HDD_4TB_2/sergio/TFM/hecktor/hecktor/test_preds_MCD/voting'
+    output_path = '/media/HDD_4TB_2/sergio/TFM/hecktor/hecktor/test_preds_MCD/voting_testSTD'
     voting = Voting(model_path, output_path)
     # voting.hard_voting()
     # voting.soft_voting()

@@ -38,10 +38,9 @@ def predict_with_uncertainty(predictor: nnUNetPredictor,
     if not os.path.exists(output_folder):
         os.makedirs(output_folder)
 
-    # Create a folder for storing entropy results
-    entropy_folder = os.path.join(output_folder, 'entropy')
-    if not os.path.exists(entropy_folder):
-        os.makedirs(entropy_folder)
+    output_correct_resolution = os.path.join(output_folder, 'correct_res')
+    if not os.path.exists(output_correct_resolution):
+        os.makedirs(output_correct_resolution)
 
     model_dirs = []
     for i in range(num_fwd_passes):
@@ -67,12 +66,12 @@ def predict_with_uncertainty(predictor: nnUNetPredictor,
             print(patient_files_for_id)
             for i, model_dir in enumerate(model_dirs):
                 predictor.network.eval()
-                enable_dropout(predictor.network) # Enable dropout
+                #enable_dropout(predictor.network) # Enable dropout
                 with torch.no_grad():
                     pred = predictor.predict_from_files(
                         list_of_lists_or_source_folder=[patient_files_for_id], # has to be 'list of lists'
-                        output_folder_or_list_of_truncated_output_files=None,
-                        save_probabilities=True,
+                        output_folder_or_list_of_truncated_output_files=output_correct_resolution, # change to 'None' to not save pred
+                        save_probabilities=False,
                         overwrite=True,
                         num_processes_preprocessing=1,
                         num_processes_segmentation_export=1,
@@ -82,21 +81,26 @@ def predict_with_uncertainty(predictor: nnUNetPredictor,
                     )
                     #pred[0][1].shape = (3, 176, 176, 176)
 
-                    pred_class_probs = pred[0][1]
+            #         pred_class_probs = pred[0][1]
 
-                    # Save logits as npz
-                    np.savez_compressed(os.path.join(model_dir, pat_id + '_logits.npz'), pred_class_probs)
+            #         # Save logits as npz
+            #         np.savez_compressed(os.path.join(model_dir, pat_id + '_logits.npz'), pred_class_probs)
                     
-                    # Save prediction as NIfTI
-                    pred_class = np.argmax(pred_class_probs, axis=0)
-                    pred_image = sitk.GetImageFromArray(pred_class.astype(np.uint8))
-                    reference_image = sitk.ReadImage(patient_files_for_id[0]) # use CT modality as reference image
-                    pred_image.CopyInformation(reference_image)
-                    sitk.WriteImage(pred_image, os.path.join(model_dir, pat_id+'.nii.gz'))
+            #         # Save prediction as NIfTI
+            #         pred_class = np.argmax(pred_class_probs, axis=0)
+            #         pred_image = sitk.GetImageFromArray(pred_class.astype(np.uint8))
+            #         reference_image = sitk.ReadImage(patient_files_for_id[0]) # use CT modality as reference image
+            #         pred_image.CopyInformation(reference_image)
+            #         sitk.WriteImage(pred_image, os.path.join(model_dir, pat_id+'.nii.gz'))
             print(f"Preds and Logits done for {pat_id}")
 
     # Calculate and save entropy for each patient
     if compute_entropy:
+        # Create a folder for storing entropy results
+        entropy_folder = os.path.join(output_folder, 'entropy')
+        if not os.path.exists(entropy_folder):
+            os.makedirs(entropy_folder)
+            
         for pat_id in patient_ids:
             predictions = []
             for model_dir in model_dirs:
@@ -193,8 +197,8 @@ class STUNet_predictor(nnUNetPredictor):
 
 def main() -> None:
     model_folder = "/media/HDD_4TB_2/sergio/TFM/hecktor/hecktor/data/nnUNet_results/Dataset500_HeadNeckPTCT/STUNetTrainer_base_ft__nnUNetPlans__3d_fullres"
-    input_dir = "/media/HDD_4TB_2/sergio/TFM/hecktor/hecktor/data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/imagesTs"
-    output_dir = "/media/HDD_4TB_2/sergio/TFM/hecktor/hecktor/holdout_STUNet_base_preds"
+    input_dir = "/media/HDD_4TB_2/sergio/TFM/hecktor/hecktor/data/nnUNet_raw_data/Dataset500_HeadNeckPTCT/imagesHecktorTs"
+    output_dir = "/media/HDD_4TB_2/sergio/TFM/hecktor/hecktor/testHeck_preds_STUNet_base"
 
     # Initialize the nnUNetPredictor
     # Create new custom nnUNetPredictor that works with STUNet implementation !!

@@ -255,17 +255,33 @@ class SAM3DConvUNet(nn.Module):
     def forward(self, x):
 
         sam_input = x.detach()
-        # if sam_input.shape[1] == 1:
-        #     sam_input = sam_input.repeat(1, 3, 1, 1)
+        if sam_input.shape[1] == 2:
+            sam_input_ct = sam_input[:, 0:1, :, :, :]  # select the CT modality
+            sam_input_pet = sam_input[:, 1:2, :, :, :]  # select the PET modality
+
+            # Forward each modality independently through the SAM-3D encoder
+            sam_embed_ct = self.sam_image_encoder(sam_input_ct)
+            sam_embed_pet = self.sam_image_encoder(sam_input_pet)
+
+            # Concatenate them along channels
+            sam_embed = torch.cat((sam_embed_ct, sam_embed_pet), dim=1)
+        
+        else:
+            raise ValueError("Expected input with 2 channels for CT and PET modalities.")
 
         # Check if interpolation is needed since image_size from _build_sam3D_ori is 128, which is out patch size
         # sam_input = F.interpolate(sam_input, size=(1024, 1024), mode='bilinear', align_corners=True)
         
-        sam_embed = self.sam_image_encoder(sam_input)
+        #sam_embed = self.sam_image_encoder(sam_input)
         
         skips = self.encoder(x)
 
-        sam_embed = F.interpolate(sam_embed, size=(skips[3].shape[2], skips[3].shape[3], skips[3].shape[4]), mode='trilinear', align_corners=True)
+        sam_embed = F.interpolate(
+            sam_embed, 
+            size=(skips[3].shape[2], skips[3].shape[3], skips[3].shape[4]), 
+            mode='trilinear', 
+            align_corners=True)
+        
         skips[3] = torch.cat((skips[3], sam_embed), dim=1)
         
 

@@ -33,6 +33,7 @@ from nnunetv2.utilities.label_handling.label_handling import determine_num_input
 from nnunetv2.utilities.plans_handling.plans_handler import PlansManager, ConfigurationManager
 from nnunetv2.utilities.utils import create_lists_from_splitted_dataset_folder
 
+from nnunetv2.utilities.unet import SAM3DConvUNet
 
 class nnUNetPredictor(object):
     def __init__(self,
@@ -99,6 +100,9 @@ class nnUNetPredictor(object):
         if trainer_class is None:
             raise RuntimeError(f'Unable to locate trainer class {trainer_name} in nnunetv2.training.nnUNetTrainer. '
                                f'Please place it there (in any .py file)!')
+
+        #print(f"!!!!!!!! TRAINER CLASS is {trainer_class}")
+
         network = trainer_class.build_network_architecture(
             configuration_manager.network_arch_class_name,
             configuration_manager.network_arch_init_kwargs,
@@ -111,6 +115,10 @@ class nnUNetPredictor(object):
             enable_deep_supervision=False,
         )
 
+         # Ensure model architecture is correct for nnSAM3D
+        # if os.environ.get('MODEL_NAME') == 'nnsam_3d' and not isinstance(network, SAM3DConvUNet):
+        #     raise RuntimeError("The network initialized does not match SAM3DConvUNet despite MODEL_NAME being 'nnsam_3d'.")
+        
         self.plans_manager = plans_manager
         self.configuration_manager = configuration_manager
         self.list_of_parameters = parameters
