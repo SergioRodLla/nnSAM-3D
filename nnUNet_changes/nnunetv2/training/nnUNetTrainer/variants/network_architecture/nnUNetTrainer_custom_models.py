@@ -47,7 +47,7 @@ class nnUNetTrainer_MCDropout(nnUNetTrainer):
             deep_supervision=enable_deep_supervision
         )
         
-        print("Using model for MCDropout with drop prob. 0.3", "\n")
+        print("Using model for MCDropout with drop prob. 0.2", "\n")
         print(model) # ensure new model archictecture is correctly set!
         return model
 
