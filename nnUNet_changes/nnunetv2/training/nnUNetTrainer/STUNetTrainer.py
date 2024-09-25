@@ -1,3 +1,5 @@
+# from https://github.com/uni-medical/STU-Net/blob/main/nnUNet-2.2/nnunetv2/training/nnUNetTrainer/STUNetTrainer.py
+
 from nnunetv2.training.nnUNetTrainer.nnUNetTrainer import nnUNetTrainer
 import torch
 from torch import nn

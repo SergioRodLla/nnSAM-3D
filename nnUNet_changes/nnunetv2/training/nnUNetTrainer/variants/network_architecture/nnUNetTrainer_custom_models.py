@@ -1,3 +1,22 @@
+'''
+This script contains the trainer classes to use the following network architectures:
+    - nnUNetTrainer_MCD: adds dropout layers to the baseline nnUNet model (specify drop probabilty)
+    - nnSAM_Trainer: original nnSAM model that can process 2D inputs
+    - nnSAM3D_Trainer: our custom model leveraging SAM-Med3D image encoder
+
+To use them call nnUNetv2_train with the trainer class name with "-tr", for example:
+    nnUNetv2_train DATASET_NAME_OR_ID UNET_CONFIGURATION FOLD -tr nnSAM3D_Trainer
+
+All of these inherit from the nnUNetTrainer class.
+They build the desired architecture by calling get_network_from_plans_custom.
+
+IMPORTANT: To use nnSAM-3D model require setting enviromental variable like:
+    export MODEL_NAME=nnsam_3d
+In this way, the function gets this information
+
+'''
+
+
 from typing import Union, Tuple, List
 from nnunetv2.training.nnUNetTrainer.nnUNetTrainer import nnUNetTrainer
 import torch
@@ -6,30 +25,8 @@ from nnunetv2.utilities.get_network_from_plans_custom import get_network_from_pl
 from torch.nn.parallel import DistributedDataParallel as DDP
 from nnunetv2.utilities.label_handling.label_handling import determine_num_input_channels
 
-# class nnUNetTrainer_MCDropout(nnUNetTrainer):
-#     @staticmethod
-#     def build_network_architecture(architecture_class_name: str,
-#                                    arch_init_kwargs: dict,
-#                                    arch_init_kwargs_req_import: Union[List[str], Tuple[str, ...]],
-#                                    num_input_channels: int,
-#                                    num_output_channels: int,
-#                                    plans_manager,
-#                                    dataset_json,
-#                                    configuration_manager,
-#                                    enable_deep_supervision: bool = True,) -> nn.Module:
-#         model = get_network_from_plans_dropout(
-#             plans_manager = plans_manager,
-#             dataset_json = dataset_json,
-#             configuration_manager = configuration_manager,
-#             num_input_channels = num_input_channels,
-#             num_output_channels = num_output_channels,
-#             deep_supervision = enable_deep_supervision)
-        
-#         print("Using model for MCDropout", "\n")
-#         #print(model) # ensure new model archictecture is correctly set!
-        # return model
-
-class nnUNetTrainer_MCDropout_p03(nnUNetTrainer):
+# trainer class to build the MCD architecture specifying drop prob.
+class nnUNetTrainer_MCDropout(nnUNetTrainer):
     @staticmethod
     def build_network_architecture(architecture_class_name: str,
                                    arch_init_kwargs: dict,
@@ -46,7 +43,7 @@ class nnUNetTrainer_MCDropout_p03(nnUNetTrainer):
             configuration_manager=configuration_manager,
             num_input_channels=num_input_channels,
             num_output_channels=num_output_channels,
-            drop_prob=0.3,
+            drop_prob=0.2,
             deep_supervision=enable_deep_supervision
         )
         
@@ -105,6 +102,7 @@ class nnUNetTrainer_MCDropout_p03(nnUNetTrainer):
     #         enable_deep_supervision=self.enable_deep_supervision
     #     )
 
+# trainer class to build the nnSAM (2D) architecture
 class nnSAM_Trainer(nnUNetTrainer):
     '''
     IMPORTANT: Using nnSAM architecture requites setting enviromental variable like this:
@@ -171,9 +169,10 @@ class nnSAM_Trainer(nnUNetTrainer):
             raise RuntimeError("You have called self.initialize even though the trainer was already initialized. "
                                "That should not happen.")
         
+# trainer class to build the nnSAM (2D) architecture
 class nnSAM3D_Trainer(nnUNetTrainer):
     '''
-    IMPORTANT: Using nnSAM3D architecture requites setting enviromental variable like this:
+    IMPORTANT: Using nnSAM3D architecture require setting enviromental variable like this:
     export MODEL_NAME=nnsam_3d
     '''
     @staticmethod

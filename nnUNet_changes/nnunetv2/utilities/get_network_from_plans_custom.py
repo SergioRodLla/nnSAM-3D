@@ -1,5 +1,4 @@
-# From uncertainty-segmentation-mcdropout --> segmentation --> modification_nnunet --> get_network_from_plans.py
-# This module name (filename) has been changed to keep the original one
+# Modified the original get_network_from_plans.py from nnUNet to build custom net architectures
 
 # From original code: https://github.com/MIC-DKFZ/nnUNet
 # nnunetv2 --> utilities --> get_network_from_plans.py (line 40)
@@ -13,6 +12,8 @@ from nnunetv2.utilities.plans_handling.plans_handler import ConfigurationManager
 from torch import nn
 import os
 
+# this function is called inside the Trainer class (e.g. nnSAM3D_Trainer, nnUNetTrainer, etc.)
+# custom trainer classes can be found in nnUNetTrainer_custom_models.py
 def get_network_from_plans_custom(plans_manager: PlansManager,
                            dataset_json: dict,
                            configuration_manager: ConfigurationManager,
@@ -41,12 +42,12 @@ def get_network_from_plans_custom(plans_manager: PlansManager,
     #segmentation_network_class_name = configuration_manager.UNet_class_name
     segmentation_network_class_name = configuration_manager.network_arch_class_name
 
-    # Get nnSAM architecture
+    # Specify nnSAM (2D) architecture
     if os.environ.get('MODEL_NAME') == 'nnsam_2d':
         segmentation_network_class_name = 'SAMConvUNet'
     #assert os.environ.get('MODEL_NAME') == 'nnsam_2d', "The trainer specified is nnSAM_Trainer but MODEL_NAME was not set to nnsam_2d"
         
-    
+    # Specify nnSAM-3D architecture
     if os.environ.get('MODEL_NAME') == 'nnsam_3d':
         segmentation_network_class_name = 'SAM3DConvUNet'
     #assert os.environ.get('MODEL_NAME') == 'nnsam_3d', "The trainer specified is nnSAM3D_Trainer but MODEL_NAME was not set to nnsam_3d"
@@ -116,7 +117,7 @@ def get_network_from_plans_custom(plans_manager: PlansManager,
         'n_conv_per_stage' if network_class != ResidualEncoderUNet else 'n_blocks_per_stage': arch_kwargs['n_conv_per_stage'],
         'n_conv_per_stage_decoder': arch_kwargs['n_conv_per_stage_decoder']
     }
-    # network class name!!
+    
     model = network_class(
         input_channels=num_input_channels,
         n_stages=num_stages,
