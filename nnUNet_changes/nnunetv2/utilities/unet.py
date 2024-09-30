@@ -17,9 +17,10 @@ import requests
 import os
 
 # Import SAM-Med3D model
-import sys
-sys.path.append('/media/HDD_4TB_2/sergio/TFM/SAM-Med3D/SAM-Med3D')
-from segment_anything.build_sam3D import sam_model_registry3D
+# import sys
+# sys.path.append('/media/HDD_4TB_2/sergio/TFM/SAM-Med3D/SAM-Med3D')
+# from segment_anything.build_sam3D import sam_model_registry3D
+from .build_sam3D import sam_model_registry3D
 
 
 def download_model(url,destination):
@@ -231,23 +232,25 @@ class SAM3DConvUNet(nn.Module):
         
         # Replacing mobileSAM by SAM-Med3D
         save_path = nnUNet_raw
-        model_weight_path = os.path.join(save_path, "sam_med3d_turbo.pth")
+        model_weight_path = os.path.join(save_path, "sam_med3d_turbo.pth") # path to sam-med3d weights
         
         device = "cuda" if torch.cuda.is_available() else "cpu"
         checkpoint = torch.load(model_weight_path, map_location=device)
         state_dict = checkpoint['model_state_dict']
 
-        model_type = "vit_b_ori" # changed
+        model_type = "vit_b_ori" # model config used in sam_model_registry3D
 
         
 
         sam_med3d = sam_model_registry3D[model_type](checkpoint=None)
         sam_med3d.to(device=device)
 
-        sam_med3d.load_state_dict(state_dict)
+        sam_med3d.load_state_dict(state_dict) # load weights into the model
         
-        self.sam_image_encoder = sam_med3d.image_encoder
+        # Select the 3D image encoder from SAM-Med3D
+        self.sam_image_encoder = sam_med3d.image_encoder 
 
+        # Freeze encoder params.
         for param in self.sam_image_encoder.parameters():
             param.requires_grad = False
 
@@ -268,11 +271,6 @@ class SAM3DConvUNet(nn.Module):
         
         else:
             raise ValueError("Expected input with 2 channels for CT and PET modalities.")
-
-        # Check if interpolation is needed since image_size from _build_sam3D_ori is 128, which is out patch size
-        # sam_input = F.interpolate(sam_input, size=(1024, 1024), mode='bilinear', align_corners=True)
-        
-        #sam_embed = self.sam_image_encoder(sam_input)
         
         skips = self.encoder(x)
 
