@@ -1,7 +1,7 @@
 # Ignore the entire folder
 nnUNet_changes/**
-nnUNet_evaluation
-nnUNet_train_results
+nnUNet_evaluation/
+nnUNet_train_results/
 
 # Ensure parent directories are not ignored
 !nnUNet_changes/nnunetv2/**
